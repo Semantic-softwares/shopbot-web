@@ -1,0 +1,13 @@
+.category {
+
+    &-card {
+        box-sizing: border-box;
+    }
+
+    &-btn:hover {
+        img {
+            border-radius: 50%;
+            background-color: rgba(222, 222, 222, 0.562);
+        }
+    }
+}
