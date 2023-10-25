@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from "./shared/components/navbar/navbar.component";
+import { BannerComponent } from './shared/components/banner/banner.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { NavbarComponent } from "./shared/components/navbar/navbar.component";
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        NavbarComponent
+        NavbarComponent,
+        BannerComponent,
     ]
 })
 export class AppModule { }
