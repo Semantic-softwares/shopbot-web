@@ -13,7 +13,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 	templateUrl: './store-card.component.html',
 	styleUrls: ['./store-card.component.scss'],
 	standalone: true,
-	imports: [MatCardModule, MatButtonModule, FlexLayoutModule, MatIconModule]
+	imports: [
+		MatCardModule,
+		MatButtonModule,
+		FlexLayoutModule,
+		MatIconModule
+		]
 })
 
 export class StoreCardComponent implements OnInit {
