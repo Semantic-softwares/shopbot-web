@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { StoreCardComponent } from './shared/components/store-card/store-card.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { StoreCardComponent } from './shared/components/store-card/store-card.co
         AppRoutingModule,
         BrowserAnimationsModule,
         NavbarComponent,
-        StoreCardComponent
+        StoreCardComponent,
+        FooterComponent
     ]
 })
 export class AppModule { }
