@@ -1,4 +1,15 @@
-
+  
+<mat-list>
+<div mat-subheader>All Stores</div>
+</mat-list>
+<mat-list>
+  <mat-list-item>
+    <div matListItemTitle>Sort</div>
+    <div matListItemMeta>
+      <mat-icon matListItemIcon>expand_less</mat-icon>
+    </div>
+  </mat-list-item>
+</mat-list>
     <mat-selection-list  [multiple]="false">
       <mat-list-option togglePosition="before">
         Picked for you (default)
@@ -30,5 +41,66 @@
         </div>
       </mat-list-item>
     </mat-list>
-    
+    <mat-list>
+      <mat-list-item>
+        <div matListItemTitle>Price</div>
+        <div matListItemMeta>
+          <mat-icon matListItemIcon>expand_less</mat-icon>
+        </div>
+      </mat-list-item>
+    </mat-list>
+    <mat-list>
+      <div class="ml-3">
+      <mat-chip-listbox aria-label="Dog selection">
+        <mat-chip>
+          $
+        </mat-chip>
+        <mat-chip color="primary">
+          $$
+        </mat-chip>
+        <mat-chip color="accent">
+          $$$
+        </mat-chip>
+        <mat-chip color="accent">
+          $$$$
+        </mat-chip>
+      </mat-chip-listbox>
+      </div>
+      <div>
+      <mat-list class="ml-3">
+        <mat-list-item>
+          <div matListItemTitle>Delivery Fee</div>
+          <div matListItemMeta>
+            <mat-icon matListItemIcon>expand_less</mat-icon>
+          </div>
+        </mat-list-item>
+      </mat-list>
+      <div class="ml-3">
+      <mat-slider>
+        <input matSliderThumb>
+      </mat-slider>
+      </div>
+      <mat-list>
+          <mat-list-item>
+            <div matListItemTitle>Dietary</div>
+            <div matListItemMeta>
+              <mat-icon matListItemIcon>expand_less</mat-icon>
+            </div>
+          </mat-list-item>
+        </mat-list>
+        <div class="ml-4">
+        <mat-chip-listbox aria-label="Dog selection">
+          <mat-chip>
+            <img matChipAvatar src="https://tse1.mm.bing.net/th?id=OIP.ewbzxTs1p8iZwDzJXQMalgHaEV&pid=Api&P=0&h=220" alt="Photo of a Shiba Inu"/>
+            Vegan
+          </mat-chip>
+          <mat-chip color="primary">
+            <img matChipAvatar src="https://tse4.mm.bing.net/th?id=OIP._jVKAfdlZaC3hN3x7GiHhwHaFu&pid=Api&P=0&h=220" alt="Photo of a Shiba Inu"/>
+            Vegetable
+          </mat-chip>
+        </mat-chip-listbox>
+      </div>
+      
+        
+
   
