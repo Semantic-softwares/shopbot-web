@@ -1,1 +1,34 @@
-<Label class="filters" text="Hello FiltersComponent!"></Label>
+
+    <mat-selection-list  [multiple]="false">
+      <mat-list-option togglePosition="before">
+        Picked for you (default)
+      </mat-list-option>
+      <mat-list-option togglePosition="before">
+        Most popular
+      </mat-list-option>
+      <mat-list-option togglePosition="before">
+        Rating
+      </mat-list-option>
+      <mat-list-option togglePosition="before">
+        Delivery
+      </mat-list-option>
+    </mat-selection-list>
+    <mat-list>
+      <div mat-subheader>From uber eats</div>
+      <mat-list-item>
+        <mat-icon matListItemIcon>local_offer</mat-icon>
+        <div matListItemTitle>Offers</div>
+        <div matListItemMeta>
+          <mat-slide-toggle></mat-slide-toggle>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListItemIcon>rate_review</mat-icon>
+        <div matListItemTitle>Best overall</div>
+        <div matListItemMeta>
+          <mat-slide-toggle></mat-slide-toggle>
+        </div>
+      </mat-list-item>
+    </mat-list>
+    
+  
