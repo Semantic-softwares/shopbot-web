@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { RouterExtensions } from 'nativescript-angular';
-//import { TextField } from 'ui/text-field';
-//import { EventData } from 'data/observable';
-//import { ActivatedRoute } from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
