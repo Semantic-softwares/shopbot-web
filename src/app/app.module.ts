@@ -5,18 +5,25 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { StoreCardComponent } from './shared/components/store-card/store-card.component';
-import { CategoryCardComponent } from './shared/components/category-card/category-card.component';
-import { FiltersComponent } from './shared/components/filters/filters.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [AppComponent, StoreCardComponent, CategoryCardComponent],
-  bootstrap: [AppComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    NavbarComponent,
-    FiltersComponent,
-  ],
+    declarations: [
+        AppComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        CommonModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        RouterOutlet,
+        NavbarComponent,
+        StoreCardComponent,
+        FooterComponent
+    ]
 })
-export class AppModule {}
+export class AppModule { }
