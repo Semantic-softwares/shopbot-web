@@ -5,7 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { StoreCardComponent } from './shared/components/store-card/store-card.component';
-
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -15,10 +17,13 @@ import { StoreCardComponent } from './shared/components/store-card/store-card.co
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
+        CommonModule,
         AppRoutingModule,
         BrowserAnimationsModule,
+        RouterOutlet,
         NavbarComponent,
-        StoreCardComponent
+        StoreCardComponent,
+        FooterComponent
     ]
 })
 export class AppModule { }
