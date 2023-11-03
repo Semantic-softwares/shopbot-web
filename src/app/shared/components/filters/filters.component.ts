@@ -8,6 +8,7 @@ import {MatSliderModule} from '@angular/material/slider';
 import {FormsModule}   from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
 	selector: 'filters',
@@ -23,11 +24,13 @@ import {MatChipsModule} from '@angular/material/chips';
 	 MatSliderModule, 
 	 FormsModule,
 	 MatListModule, 
-	 MatChipsModule
+	 MatChipsModule,
+	 MatExpansionModule
    ]		
 })
 
 export class FiltersComponent implements OnInit {
+	panelOpenState = false;
 
 	constructor() { }
 
