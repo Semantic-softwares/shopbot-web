@@ -8,10 +8,14 @@ import { StoreCardComponent } from './shared/components/store-card/store-card.co
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { StoreComponent } from './store/store.component';
+
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+      
+        
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -23,7 +27,9 @@ import { CommonModule } from '@angular/common';
         RouterOutlet,
         NavbarComponent,
         StoreCardComponent,
-        FooterComponent
+        FooterComponent,
+        StoreComponent,
+        
     ]
 })
 export class AppModule { }
