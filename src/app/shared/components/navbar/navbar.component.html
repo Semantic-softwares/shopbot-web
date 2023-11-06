@@ -2,7 +2,8 @@
   fxlayout="row"
   fxLayoutAlign="space-around center"
   fxLayoutGap="4"
-  class="w-full h-[4.5rem] bg-red-600"
+  style="background-color: white;"
+  class="w-full h-[4.5rem] fixed z-50 top-0"
 >
   <mat-toolbar-row class="w-full mx-auto">
     <div
@@ -18,18 +19,18 @@
         <span class="font-bold text-3xl">Uber Eats</span>
       </div>
 
-      <div fxLayout="row " fxLayoutGap="48" class="w-full">
+      <div fxLayout="row " fxLayoutGap="1em" class="w-full">
         <div fxShow.gt-sm fxHide fxLayoutAlign="center center">
           <button
             mat-fab
             extended
-            color="primary"
             fxLayoutAlign="center center"
+            style="background-color: #eeeeee; box-shadow: none;"
           >
-            <mat-icon class="text-[15px] mt-2">location_on</mat-icon>
-            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="6">
+            <mat-icon class="text-[15px] mt-2 text-black">location_on</mat-icon>
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="6" class=" text-black">
               <span>Atlanta</span>
-              <span>.</span>
+              <span>•</span>
               <span>now</span>
             </div>
           </button>
@@ -72,6 +73,7 @@
             fxLayoutAlign="center center"
             fxLayoutGap="1"
             class="rounded-full bg-secondary p-3 h-9 text-black"
+            style="background-color: #eeeeee;"
           >
             <mat-icon class="text-[1.2rem] pt-px">person</mat-icon>
             <span>Log in</span>
@@ -81,6 +83,7 @@
             href="#"
             fxLayoutAlign="center center"
             class="rounded-full bg-secondary p-3 h-9 text-black"
+            style="background-color: #eeeeee;"
           >
             <span class="">Sign up</span>
           </a>

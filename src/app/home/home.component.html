@@ -1,1 +1,20 @@
-<filters></filters>
+<main>
+  <div>
+    <div><category-card></category-card></div>
+    <div><banner></banner></div>
+    <div class="p-6 pt-10 pr-10 pb-6 pl-10">
+      <div fxLayout="row" fxLayoutGap="2em">
+        <div fxFlex="20%">
+          <filters></filters>
+        </div>
+        <div fxFlex="80%">
+          <div fxLayout="row wrap" fxLayoutGap="2em">
+            <div fxFlex="200px" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]" class="h-40 mb-8">
+              <store-card></store-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

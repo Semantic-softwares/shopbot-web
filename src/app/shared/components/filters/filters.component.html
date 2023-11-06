@@ -1,16 +1,18 @@
   
 <mat-list>
-  <mat-list-item>
-    <div class="ml-2" matsubheader>
+  <mat-list-item style="padding-left: 0;">
+    <div class="text-2xl font-bold" matsubheader>
       All Stores
     </div>
   </mat-list-item>
 </mat-list>
     <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
+      <mat-expansion-panel
+        style="box-shadow: none;"
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false" expanded="true">
+        <mat-expansion-panel-header style="padding: 0;">
+          <mat-panel-title class="text-lg fon">
             Sort
           </mat-panel-title>
         </mat-expansion-panel-header>
@@ -33,10 +35,13 @@
       </mat-expansion-panel>
     </mat-accordion>
     <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
+      <mat-expansion-panel 
+        style="box-shadow: none;" 
+        (opened)="panelOpenState = true" 
+        (closed)="panelOpenState = false"
+        expanded="true">
+        <mat-expansion-panel-header style="padding: 0;">
+          <mat-panel-title class="text-lg fon">
             From uber eats
           </mat-panel-title>
         </mat-expansion-panel-header>
@@ -59,10 +64,10 @@
       </mat-expansion-panel>
     </mat-accordion>
       <mat-accordion>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
+      <mat-expansion-panel style="box-shadow: none;" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+        expanded="true">
+          <mat-expansion-panel-header style="padding: 0;">
+            <mat-panel-title class="text-lg fon">
              Price
             </mat-panel-title>
           </mat-expansion-panel-header>
@@ -87,10 +92,10 @@
         </mat-expansion-panel>
       </mat-accordion>
       <mat-accordion>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
+      <mat-expansion-panel style="box-shadow: none;" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+        expanded="true">
+          <mat-expansion-panel-header style="padding: 0;">
+            <mat-panel-title class="text-lg fon">
              Delivery Fee
             </mat-panel-title>
           </mat-expansion-panel-header>
@@ -102,10 +107,10 @@
         </mat-expansion-panel>
       </mat-accordion>
       <mat-accordion>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
+      <mat-expansion-panel style="box-shadow: none;" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+        expanded="true">
+          <mat-expansion-panel-header style="padding: 0;">
+            <mat-panel-title class="text-lg fon">
              Dietary
             </mat-panel-title>
           </mat-expansion-panel-header>
