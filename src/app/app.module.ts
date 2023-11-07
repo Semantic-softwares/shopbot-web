@@ -8,22 +8,25 @@ import { StoreCardComponent } from './shared/components/store-card/store-card.co
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { StoreItemComponent } from './store-item/store-item.component';
+
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
-        BrowserModule,
-        CommonModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        RouterOutlet,
-        NavbarComponent,
-        StoreCardComponent,
-        FooterComponent
+      BrowserModule,
+      CommonModule,
+      AppRoutingModule,
+      BrowserAnimationsModule,
+      RouterOutlet,
+      NavbarComponent,
+      StoreCardComponent,
+      FooterComponent,
+      StoreItemComponent,
     ]
 })
 export class AppModule { }
