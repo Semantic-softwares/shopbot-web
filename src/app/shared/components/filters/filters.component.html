@@ -1,126 +1,128 @@
-  
-<mat-list>
-  <mat-list-item>
-    <div class="ml-2" matsubheader>
-      All Stores
-    </div>
-  </mat-list-item>
-</mat-list>
-    <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Sort
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <mat-list>
-          <mat-selection-list  [multiple]="false">
-            <mat-list-option togglePosition="before">
-              Picked for you (default)
-            </mat-list-option>
-            <mat-list-option togglePosition="before">
-              Most popular
-            </mat-list-option>
-            <mat-list-option togglePosition="before">
-              Rating
-            </mat-list-option>
-            <mat-list-option togglePosition="before">
-              Delivery
-            </mat-list-option>
-          </mat-selection-list>
-        </mat-list>
-      </mat-expansion-panel>
-    </mat-accordion>
-    <mat-accordion>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            From uber eats
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <mat-list>
-          <mat-list-item>
-            <mat-icon matListItemIcon>local_offer</mat-icon>
-            <div matListItemTitle>Offers</div>
-            <div matListItemMeta>
-              <mat-slide-toggle></mat-slide-toggle>
-            </div>
-          </mat-list-item>
-          <mat-list-item>
-            <mat-icon matListItemIcon>rate_review</mat-icon>
-            <div matListItemTitle>Best overall</div>
-            <div matListItemMeta>
-              <mat-slide-toggle></mat-slide-toggle>
-            </div>
-          </mat-list-item>
-        </mat-list>
-      </mat-expansion-panel>
-    </mat-accordion>
-      <mat-accordion>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-             Price
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <mat-list>
-            <div>
-            <mat-chip-listbox aria-label="Dog selection">
-              <mat-chip>
-                $
-              </mat-chip>
-              <mat-chip color="primary">
-                $$
-              </mat-chip>
-              <mat-chip color="accent">
-                $$$
-              </mat-chip>
-              <mat-chip color="accent">
-                $$$$
-              </mat-chip>
-            </mat-chip-listbox>
-            </div>
-          </mat-list>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-             Delivery Fee
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-            <div>
-            <mat-slider>
-              <input matSliderThumb>
-            </mat-slider>
-            </div>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <mat-accordion>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-             Dietary
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <div>
-            <mat-chip-listbox aria-label="Dog selection">
-              <mat-chip>
-                <img matChipAvatar src="https://tse1.mm.bing.net/th?id=OIP.ewbzxTs1p8iZwDzJXQMalgHaEV&pid=Api&P=0&h=220" alt="Photo of a Shiba Inu"/>
-                Vegan
-              </mat-chip>
-              <mat-chip>
-                <img matChipAvatar src="https://tse4.mm.bing.net/th?id=OIP._jVKAfdlZaC3hN3x7GiHhwHaFu&pid=Api&P=0&h=220" alt="Photo of a Shiba Inu"/>
-                Vegetable
-              </mat-chip>
-            </mat-chip-listbox>
+<div>
+  <mat-list>
+    <mat-list-item>
+      <div class="text-2xl font-bold" matsubheader>
+        All Stores
+      </div>
+    </mat-list-item>
+  </mat-list>
+  <mat-accordion>
+    <mat-expansion-panel style="box-shadow: none;" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+      expanded="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="text-lg fon">
+          Sort
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-list>
+        <mat-selection-list [multiple]="false">
+          <mat-list-option togglePosition="before">
+            Picked for you (default)
+          </mat-list-option>
+          <mat-list-option togglePosition="before">
+            Most popular
+          </mat-list-option>
+          <mat-list-option togglePosition="before">
+            Rating
+          </mat-list-option>
+          <mat-list-option togglePosition="before">
+            Delivery
+          </mat-list-option>
+        </mat-selection-list>
+      </mat-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel style="box-shadow: none;" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+      expanded="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="text-lg fon">
+          From uber eats
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-list>
+        <mat-list-item>
+          <mat-icon matListItemIcon>local_offer</mat-icon>
+          <div matListItemTitle>Offers</div>
+          <div matListItemMeta>
+            <mat-slide-toggle></mat-slide-toggle>
           </div>
-        </mat-expansion-panel>
-      </mat-accordion>
-      
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon matListItemIcon>rate_review</mat-icon>
+          <div matListItemTitle>Best overall</div>
+          <div matListItemMeta>
+            <mat-slide-toggle></mat-slide-toggle>
+          </div>
+        </mat-list-item>
+      </mat-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel style="box-shadow: none;" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+      expanded="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="text-lg fon">
+          Price
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-list>
+        <div>
+          <mat-chip-listbox aria-label="Dog selection">
+            <mat-chip>
+              $
+            </mat-chip>
+            <mat-chip color="primary">
+              $$
+            </mat-chip>
+            <mat-chip color="accent">
+              $$$
+            </mat-chip>
+            <mat-chip color="accent">
+              $$$$
+            </mat-chip>
+          </mat-chip-listbox>
+        </div>
+      </mat-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel style="box-shadow: none;" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+      expanded="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="text-lg fon">
+          Delivery Fee
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div>
+        <mat-slider>
+          <input matSliderThumb>
+        </mat-slider>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel style="box-shadow: none;" (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+      expanded="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="text-lg fon">
+          Dietary
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div>
+        <mat-chip-listbox aria-label="Dog selection">
+          <mat-chip>
+            <img matChipAvatar src="https://tse1.mm.bing.net/th?id=OIP.ewbzxTs1p8iZwDzJXQMalgHaEV&pid=Api&P=0&h=220"
+              alt="Photo of a Shiba Inu" />
+            Vegan
+          </mat-chip>
+          <mat-chip>
+            <img matChipAvatar src="https://tse4.mm.bing.net/th?id=OIP._jVKAfdlZaC3hN3x7GiHhwHaFu&pid=Api&P=0&h=220"
+              alt="Photo of a Shiba Inu" />
+            Vegetable
+          </mat-chip>
+        </mat-chip-listbox>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
