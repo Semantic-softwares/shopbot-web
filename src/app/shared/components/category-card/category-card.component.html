@@ -1,13 +1,6 @@
-<div class="mx-12 mb-5 mt-20">
-    <div fxLayout="row" fxLayoutAlign="space-around center" class="py-5 border-b-[1.5px] border-solid border-#eeeeee">
-        <a href="" *ngFor="let category of categories; let i = index">
-            <button class="category-btn flex flex-col gap-2 items-center group">
-                <div class="h-[60px] w-[60px] rounded-full group-hover:bg-gray-300">
-                    <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts/deals.png" alt="{{category}}">
-                </div>
-                <p class="px-4 text-center font-normal leading-4">{{category}}</p>
-            </button>
-        </a>
+<button class="category-btn flex flex-col gap-2 items-center group">
+    <div class="h-[60px] w-[60px] rounded-full group-hover:bg-gray-300">
+        <img src="https://d4p17acsd5wyj.cloudfront.net/shortcuts/deals.png" alt="Deal">
     </div>
-    <!-- <hr> -->
-</div>
+    <p class="px-4 text-center font-normal leading-4">Deal</p>
+</button>
