@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
@@ -13,6 +14,7 @@ import {MatDividerModule} from '@angular/material/divider';
   styleUrls: ['./store-item.component.scss'],
   standalone: true,
   imports: [
+    CommonModule,
     FlexLayoutModule,
     MatCardModule,
     MatButtonModule,
