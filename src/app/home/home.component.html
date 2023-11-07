@@ -2,7 +2,7 @@
   <div>
     <div class="mx-12 mb-5 mt-20 overflow-x-auto md:overflow-x-hidden">
       <div fxLayout="row" fxLayoutAlign="space-around center" class="py-5 border-b-[1.5px] border-solid border-#eeeeee">
-        <a href="" *ngFor="let category of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]">
+        <a href *ngFor="let category of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]">
           <category-card></category-card>
         </a>
       </div>
@@ -12,10 +12,13 @@
         <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column">
           <div fxFlex="33%" class="mb-6 px-3">
             <div class="font-bold text-4xl mb-2 tracking-wide">Crave it? Get it.</div>
-            <div class="font-normal text-base">Search for a favorite restaurant, cuisine, or dish.</div>
+            <div class="font-normal text-base">Search for a favorite restaurant,
+              cuisine, or dish.</div>
           </div>
           <div fxLayoutAlign="center start" class="w-full">
-            <banner></banner>
+            <div>
+              <banner></banner>
+            </div>
           </div>
         </div>
       </div>
@@ -30,13 +33,49 @@
               </div>
             </div>
           </div>
-          <div>
-            <div fxLayout="row wrap" fxLayoutGap="2rem">
-              <div fxFlex="200px" *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-                   11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-                   21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
-                   31, 32, 33, 34, 35, 36, 37, 38, 39, 40]" class="h-40 mb-8">
-                <store-card></store-card>
+          <div fxLayout="column" fxLayoutGap="3rem">
+            <div *ngFor="let store-card of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+              <div>
+                <div>
+                  <div fxLayout="row" fxLayoutAlign="space-between center" class="pb-2">
+                    <div fxLayout="row">
+                      <div>
+                        <div class="text-3xl font-bold">In a rush?</div>
+                        <p class="pt-1 text-sm text-[#545454]">
+                          Here’s the fastest delivery for you
+                        </p>
+                      </div>
+                    </div>
+                    <div fxLayout="row" fxLayoutGap="40" fxLayoutAlign="center">
+                      <div class="text-base font-medium">
+                        <a href="#" class="underline">See all</a>
+                      </div>
+
+                      <div fxLayout="row" fxLayoutGap="4">
+                        <button fxLayout="row" fxLayoutAlign="center center"
+                          class="bg-[#EEEEEE] hover:bg-[#afafaf] w-10 h-10 rounded-full">
+                          <mat-icon>arrow_back</mat-icon>
+                        </button>
+                        <button fxLayout="row" fxLayoutAlign="center center"
+                          class="bg-[#EEEEEE] hover:bg-[#afafaf] w-10 h-10 rounded-full">
+                          <mat-icon>arrow_forward</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="max-w-[52.5rem] mx-auto overflow-x-auto">
+                  <div fxLayout="row" class="gap-4">
+                    <div fxFlex="208px"
+                      *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
+                      class="h-[188px]">
+                      <store-card></store-card>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
