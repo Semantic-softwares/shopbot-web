@@ -1,6 +1,6 @@
 <main>
   <div>
-    <div class="mx-12 mb-5 mt-20 overflow-x-auto md:overflow-x-hidden">
+    <div class="mx-5 mb-5 mt-20 overflow-x-auto md:overflow-x-hidden md:mx-12">
       <div fxLayout="row" fxLayoutAlign="space-around center" class="py-5 border-b-[1.5px] border-solid border-#eeeeee">
         <a href *ngFor="let category of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]">
           <category-card></category-card>
@@ -8,32 +8,40 @@
       </div>
     </div>
     <div>
-      <div class="p-6 pt-10 pr-10 pb-6 pl-10">
-        <div fxLayout="row" fxLayoutAlign="start center" fxLayout.lt-md="column">
+      <div class="p-6 pt-10 pr-5 pb-6 pl-pr-5 sm:pr-10 sm:pl-10">
+        <div fxLayout="row" fxLayoutAlign="start center" fxLayoutAlign="start" fxLayout.lt-md="column">
           <div fxFlex="33%" class="mb-6 px-3">
             <div class="font-bold text-4xl mb-2 tracking-wide">Crave it? Get it.</div>
             <div class="font-normal text-base">Search for a favorite restaurant,
               cuisine, or dish.</div>
           </div>
           <div fxLayoutAlign="center start" class="w-full">
-            <div>
+            <div *ngFor="let banner of [1]">
               <banner></banner>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="p-6 pt-10 pr-10 pb-6 pl-10">
+    <div class="p-6 pt-10 pr-5 pb-6 pl-5 sm:pr-10 sm:pl-10">
       <div>
-        <div class="relative" fxLayout="row" fxLayoutGap="2rem">
-          <div>
-            <div class="sticky top-20 left-0">
-              <div class="h-[100vh] overflow-auto">
-                <filters></filters>
+        <div class="relative" fxLayout="row" fxLayoutGap="2rem" fxLayout.lt-md="column">
+          <div fxLayoutAlign="end center" fxHide (click)="toggleInnerContainer()">
+            <div class="border-2 border-black p-2 w-fit cursor-pointer" fxLayoutAlign="center">
+              <div fxLayout="row" fxLayoutAlign="start center" class="gap-2">
+                <button mat-icon-button>
+                  <mat-icon class="font-bold text-[0.9rem] pt-1">filter_list</mat-icon>
+                </button>
+                <span class="font-semibold text-xs mb-1">Filters</span>
               </div>
             </div>
           </div>
-          <div fxLayout="column" fxLayoutGap="3rem">
+          <div class="sticky top-20 left-0" *ngIf="showInnerContainer">
+            <div class="h-[100vh] overflow-auto">
+              <filters></filters>
+            </div>
+          </div>
+          <div fxLayout="column" fxLayoutGap="3rem" fxFlex.lt-md="100%">
             <div *ngFor="let store-card of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
               <div>
                 <div>

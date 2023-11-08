@@ -25,8 +25,14 @@ import { CategoryCardComponent } from '../shared/components/category-card/catego
 })
 
 export class HomeComponent implements OnInit {
-
+	
 	constructor() { }
 
 	ngOnInit() { }
+
+	showInnerContainer = false;
+
+  	toggleInnerContainer() {
+    	this.showInnerContainer = !this.showInnerContainer;
+	}
 }
