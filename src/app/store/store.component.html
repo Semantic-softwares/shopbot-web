@@ -1,20 +1,21 @@
-<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="2rem">
-    <div class="relative">
-      <div class="flex flex-col sticky top-0 left-0 mb-[12rem]">
-          <a href="#" class="flex justify-start items-center text-xl font-sm">
+<div>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="2rem" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="center start" class="sm:mt-[0rem] mt-[7rem]">
+    <div class=" sm:sticky sm:top-0 sm:left-0 sm:h-[h]">
+      <div class="flex flex-col mb-[12rem]">
+          <a href="#" class="flex justify-start items-center ml-[2rem] sm:ml-[0rem] sm:text-xl sm:font-sm font-medium text-md text-align">
               <mat-icon>keyboard_backspace</mat-icon>
               Back to Chick-fil-A (235 Peachtree St Ne # B-40)
           </a>
           <img class="" src="https://tb-static.uber.com/prod/image-proc/processed_images/ca19bfd164bcffc6038863ccda2b94b1/5954bcb006b10dbfd0bc160f6370faf3.jpeg" alt="">
-      <div class="bg-neutral-200 w-[33rem] h-[30rem] opacity-25 absolute mt-[6rem] ml-[rem] top-0 right-0 left-0 bottom-0">   
+      <div class="sm:w-[33rem] sm:h-[30rem] bg-neutral-200 w-[25rem] h-[20rem] opacity-25 absolute sm:mt-[6rem] mt-[9rem] md:mr-[24rem] mr-[0.8rem] top-0 right-0 sm:left-3 bottom-0">   
       </div>
       </div>
     </div>
-      <div fxLayout="column" fxLayoutGap="4rem" class="mt-[7rem] pb-7">
+      <div fxLayout="column" fxLayoutGap="4rem" fxLayoutAlign.lt-sm="center center" class="sm:mt-[7rem] sm:pb-7 p-5">
           <div>
           <h1 mat-headline class="">Chick-fil-A® Chicken Biscuit Meal</h1>
           <h2 mat-headline class="">$9.09</h2>
-          <p class="w-[23rem]">A breakfast portion of our famous boneless breast of chicken, seasoned to perfection, hand-breaded, pressure cooked in 100% refined peanut oil and served on a buttermilk biscuit baked fresh at each Restaurant.</p>
+          <p class="sm:w-[23rem]">A breakfast portion of our famous boneless breast of chicken, seasoned to perfection, hand-breaded, pressure cooked in 100% refined peanut oil and served on a buttermilk biscuit baked fresh at each Restaurant.</p>
           <div class="flex justify-center bg-neutral-200 rounded-2xl w-[4rem] h-[1.3rem] p-[0.2rem]">
             <mat-icon class="text-xs">thumb_up</mat-icon>
             <p class="text-xs">66%</p>
@@ -24,7 +25,7 @@
           </mat-list>
             <mat-list>
               <mat-list-item>
-                <div class="flex justify-between items-center">
+                <div class="flex sm:justify-between gap-[35%] items-center">
                   <div>
                     <span matListItemTitle>Choose your option</span>
                     <span matListItemLine>Choose 3</span>
@@ -33,12 +34,12 @@
                 </div>
               </mat-list-item>
             </mat-list>
-            <mat-selection-list>
+            <mat-selection-list class=" p-4 sm:w-[100%] w-[100%]">
               <mat-list-option>
                   Chick-fil-A® Chicken Biscuit
               </mat-list-option>
             </mat-selection-list>
-            <mat-card class=" p-4 shadow-md">
+            <mat-card class="  p-4 shadow-md sm:w-[100%] w-[100%]">
               <div class="flex justify-between items-center">
                 <span class="text-">Customize this item</span>
                 <mat-icon class="text-black ml-2">chevron_right</mat-icon>
@@ -47,12 +48,12 @@
             <mat-list>
               <mat-divider></mat-divider>
             </mat-list>
-            <mat-selection-list>
+            <mat-selection-list class=" p-4 sm:w-[100%] w-[100%]">
               <mat-list-option>
                   Breakfast Meal Sides
               </mat-list-option>
             </mat-selection-list>
-            <mat-card class=" bg-blue-200 p-3">
+            <mat-card class=" p-4 shadow-md sm:w-[100%] w-[100%]">
               <div class="flex justify-between items-center">
                 <span class="text-">Edit Selection</span>
                 <mat-icon class="text-black ml-2">chevron_right</mat-icon>
@@ -61,12 +62,12 @@
             <mat-list>
               <mat-divider></mat-divider>
             </mat-list>
-            <mat-selection-list >
+            <mat-selection-list class=" p-4 sm:w-[100%] w-[100%]">
               <mat-list-option>
                   Meal Beverages
               </mat-list-option>
             </mat-selection-list>
-            <mat-card class=" p-3 shadow-md">
+            <mat-card class=" p-4 shadow-md sm:w-[100%] w-[100%]">
               <div class="flex justify-between items-center">
                 <span class="text-">Edit Selection</span>
                 <mat-icon class="text-black ml-2">chevron_right</mat-icon>
@@ -78,11 +79,13 @@
             <div>
             </div>
           </div>
-          <button class="text-white font-medium text-lg rounded-xl bg-black h-[3.7rem] w-[30rem]">Add to order.$9.09</button>
+          <button class="text-white font-medium sm:text-lg rounded-xl bg-black sm:h-[3.7rem] sm:w-[30rem] h-[3rem]  w-[100%]">
+            Add to order.$9.09
+          </button>
       </div>
   </div>
-  <div matSubheader class="text-2xl font-semibold pl-[2rem]">Frequently bought together</div>
-  <div fxLayout="row wrap" fxLayoutGap="0.3rem" class="pl-[2rem]">
+  <div matSubheader class="text-2xl font-semibold sm:pl-[1.8rem] ">Frequently bought together</div>
+  <div fxLayout="row wrap" fxLayoutGap="0.3rem" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="center" class="sm:pl-[2rem] p-4">
       <mat-card class="w-[25rem] h-[12rem] p-4 shadow-md hover:shadow-xl hover:duration-75">
           <div class="flex">
               <div>
@@ -158,4 +161,4 @@
     <mat-list>
       <mat-divider></mat-divider>
     </mat-list>
-  
+</div>
