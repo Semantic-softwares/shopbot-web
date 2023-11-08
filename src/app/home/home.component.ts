@@ -30,9 +30,10 @@ export class HomeComponent implements OnInit {
 
 	ngOnInit() { }
 
-	showInnerContainer = false;
 
-  	toggleInnerContainer() {
-    	this.showInnerContainer = !this.showInnerContainer;
+	showFiltersContainer = false;
+
+	toggleFiltersContainer() {
+		this.showFiltersContainer = !this.showFiltersContainer;
 	}
 }
