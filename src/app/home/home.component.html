@@ -16,7 +16,7 @@
               cuisine, or dish.</div>
           </div>
           <div fxLayoutAlign="center start" class="w-full">
-            <div *ngFor="let banner of [1]">
+            <div>
               <banner></banner>
             </div>
           </div>
@@ -38,13 +38,15 @@
                 </div>
               </div>
             </div>
-            <div class="absolute shadow-2xl border-2 bg-white z-20 h-[100vh] top-20 left-0 lg:sticky lg:shadow-none lg:border-none"  [fxHide.lt-md]="!showFiltersContainer" >
+            <div
+              class="absolute shadow-2xl border-2 bg-white z-20 h-[100vh] top-20 left-0 lg:sticky lg:shadow-none lg:border-none"
+              [fxHide.lt-md]="!showFiltersContainer">
               <div class="h-[100vh] overflow-auto">
                 <filters></filters>
               </div>
             </div>
           </div>
-          <div fxLayout="column" fxLayoutGap="3rem" fxFlex.lt-md="100%">
+          <div fxLayout="column" fxLayoutGap="3rem">
             <div *ngFor="let store-card of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
               <div>
                 <div>
