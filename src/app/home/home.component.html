@@ -38,8 +38,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="sticky top-20 left-0" [fxHide.lt-md]="!showFiltersContainer">
+            <div class="absolute shadow-2xl border-2 bg-white z-20 h-[100vh] top-20 left-0 lg:sticky lg:shadow-none lg:border-none"  [fxHide.lt-md]="!showFiltersContainer" >
               <div class="h-[100vh] overflow-auto">
                 <filters></filters>
               </div>
