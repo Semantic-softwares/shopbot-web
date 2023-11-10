@@ -3,6 +3,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 	templateUrl: './navbar.component.html',
 	styleUrls: ['./navbar.component.scss'],
 	standalone: true,
-	imports: [MatToolbarModule, MatIconModule, FlexLayoutModule, MatButtonModule]
+	imports: [MatToolbarModule, MatIconModule, FlexLayoutModule, MatButtonModule, MatBadgeModule]
 })
 
 export class NavbarComponent implements OnInit {
