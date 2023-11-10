@@ -15,7 +15,6 @@ import { CartComponent } from './shared/components/cart/cart.component';
 @NgModule({
     declarations: [
         AppComponent,
-        CartComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -29,6 +28,7 @@ import { CartComponent } from './shared/components/cart/cart.component';
       StoreCardComponent,
       FooterComponent,
       StoreItemComponent,
+      CartComponent
     ]
 })
 export class AppModule { }
