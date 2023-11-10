@@ -1,12 +1,40 @@
-<!-- <mat-form-field>
-    <mat-label>Message</mat-label>
-    <input matInput value="Disco party!" #message>
+<div fxLayout="column" fxLayoutLAlign="center center" class="h-[26rem] w-[32rem] bg-[white] p-4 ">
+  <div fxLayoutGap="2rem" class="ml-4">
+    <div fxLayoutAlign="center center"
+      class="h-[3rem] w-[3rem] rounded-[3rem] transition-all hover:bg-zinc-300 cursor-pointer" (click)="closeDialog()">
+      <mat-icon class="text-[1.5rem] ">close</mat-icon>
+    </div>
+    <div class="font-bold text text-[2rem] mt-9">Delivery details</div>
+  </div>
+  <mat-form-field class="">
+    <mat-card class=" h-[3rem] px-4" fxLayout="row" fxLayoutAlign="space-between center">
+      <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="center center">
+        <mat-icon> location_on</mat-icon>
+        <div class="">Texas</div>
+      </div>
+      <button class="h-[2.5rem] w-[5rem] rounded-[2.5rem] bg-zinc-300 cursor-pointer" (click)="openSecondDialog()">
+        Change
+      </button>
+    </mat-card>
   </mat-form-field>
-  
+  <div class="px-8 cursor-pointer transition-all hover:text-green-600" fxLayout="row" fxLayoutGap="0.5rem"
+    fxLayoutAlign="start center">
+    <mat-icon>flag</mat-icon>
+    <span class="m-0">
+      Use Current Location
+    </span>
+  </div>
   <mat-form-field>
-    <mat-label>Action</mat-label>
-    <input matInput value="Dance" #action>
+    <mat-card class="h-[3rem] px-4" fxLayout="row" fxLayoutAlign="space-between center">
+      <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="center center">
+        <mat-icon>access_time</mat-icon>
+        <div>Now</div>
+      </div>
+      <button class="h-[2.5rem] w-[6rem] rounded-[2.5rem] bg-zinc-300 cursor-pointer">
+        Schedule
+      </button>
+    </mat-card>
   </mat-form-field>
-  
-  <button mat-stroked-button (click)="openSnackBar(message.value, action.value)">Show snack-bar</button>
-   -->
+  <button class="bg-black text-white text-[1.2rem] h-[3.5rem] w-[93%] ml-4 cursor-pointer hover:bg-zinc-800"
+    (click)="closeDialog()">Done</button>
+</div>
