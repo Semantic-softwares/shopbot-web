@@ -18,10 +18,8 @@ import { MatDialog } from '@angular/material/dialog';
   ],
 })
 export class LocationModalComponent {
-  constructor(public dialog: MatDialog) {}
-
+  constructor(public dialog: MatDialog) { }
   closeDialog() {
-		this.dialog.closeAll();
-	  }
-    
+    this.dialog.closeAll();
+  }
 }
