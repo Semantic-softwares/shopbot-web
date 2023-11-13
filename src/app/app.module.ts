@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { StoreComponent } from './store/store.component';
 =======
 import { StoreItemComponent } from './store-item/store-item.component';
+import { CartComponent } from './shared/components/cart/cart.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { StoreItemComponent } from './store-item/store-item.component';
       StoreCardComponent,
       FooterComponent,
       StoreItemComponent,
+      CartComponent
     ]
 })
 export class AppModule { }
