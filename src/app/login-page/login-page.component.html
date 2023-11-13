@@ -1,4 +1,4 @@
-<div fxLayout="column" fxLayoutAlign="center center" class="pt-20 px-4 h-[100vh] w-full">
+<form fxLayout="column" fxLayoutAlign="center center" class="pt-20 px-4 h-[100vh] w-full">
 
     <div fxLayout="column" fxLayoutGap="2rem" class="min-w-[18rem] max-w-[26rem]">
 <div fxLayout="column" fxLayoutGap="1rem">
@@ -11,14 +11,14 @@
         
         <mat-form-field appearance="outline">
      
-            <input matInput type="email" placeholder="Email">
+            <input matInput type="email" placeholder="Enter Email" required>
   
           </mat-form-field>
   
       
           <mat-form-field appearance="outline">
            
-            <input matInput type="password" placeholder="Password">
+            <input matInput type="password" placeholder="Password" required>
             
           </mat-form-field>
         
@@ -35,9 +35,9 @@
     
             </p>
     
-            <button class="h-[4rem] w-full bg-black text-white text-base rounded-lg">
+            <button class="h-[4rem] w-full bg-black text-white text-base rounded-lg transition-all hover:bg-zinc-800">
                 Continue
             </button>
 
     </div>
-</div>
+</form>
