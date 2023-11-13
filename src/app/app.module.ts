@@ -9,6 +9,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { StoreItemComponent } from './store-item/store-item.component';
+import { CartComponent } from './shared/components/cart/cart.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { StoreItemComponent } from './store-item/store-item.component';
       StoreCardComponent,
       FooterComponent,
       StoreItemComponent,
+      CartComponent
     ]
 })
 export class AppModule { }
