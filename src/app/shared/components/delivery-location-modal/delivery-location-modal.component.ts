@@ -27,6 +27,6 @@ export class DeliveryLocationModalComponent {
     this.dialog.closeAll();
   }
   openSecondDialog() {
-    this.dialog.open(LocationModalComponent);
+    this.dialog.open(LocationModalComponent,  {width: '32rem', height: '16rem'});
   }
 }
