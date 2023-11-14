@@ -9,9 +9,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { StoreComponent } from './store/store.component';
-=======
 import { StoreItemComponent } from './store-item/store-item.component';
-
 
 @NgModule({
     declarations: [
