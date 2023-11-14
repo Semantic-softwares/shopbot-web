@@ -1,260 +1,362 @@
 <main class="mt-16">
+  <div>
+    <mat-card fxLayout="row" fxLayoutAlign=" center">
+      <img
+        class="w-full h-40 object-cover"
+        src="https://tb-static.uber.com/prod/image-proc/processed_images/df2de7977509b3697cd12d679c8571c2/97ef7458dde62fa918635bc21265d9f5.jpeg"
+      />
+      <div
+        mat-fab
+        fxLayoutGap="10"
+        class="absolute right-2 top-4 sm:right-5 sm:top-6"
+      >
+        <button mat-mini-fab style="background-color: white; color: black">
+          <mat-icon>favorite_border</mat-icon>
+        </button>
+        <button mat-mini-fab style="background-color: white; color: black">
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+      </div>
+    </mat-card>
+
     <div>
-        <mat-card fxLayout="row" fxLayoutAlign=" center" class=" ">
-          <img
-            class="w-full h-40 object-cover"
-            src="https://tb-static.uber.com/prod/image-proc/processed_images/df2de7977509b3697cd12d679c8571c2/97ef7458dde62fa918635bc21265d9f5.jpeg"
-          />
-          <div mat-fab fxLayoutGap="10" class="absolute right-14 top-8">
-            <button mat-mini-fab style="background-color: white; color: black">
-              <mat-icon>favorite_border</mat-icon>
-            </button>
-            <button mat-mini-fab style="background-color: white; color: black">
-              <mat-icon>more_horiz</mat-icon>
-            </button>
-          </div>
-        </mat-card>
-  
-      <div>
-        <div class="px-4 py-8 lg:px-10">
-          <div class="pb-6">
-            <span class="text-xl font-bold sm:text-4xl"
-              >Dunkin' (98 Forsyth St Nw # 100)</span
-            >
-            <div class="pb-8 text-xs sm:text-sm">
-              <div>
-                4.3 (37 ratings) • Breakfast and Brunch • $ •
-                <a href="#" class="underline">Read 5-Star Reviews</a>
-                •
-                <a href="#" class="underline">More info</a>
-              </div>
-              <span class="text-[#545454] text-xs sm:text-sm pt-1"
-                >Closed • Available Saturday 6:30 AM</span
-              >
-            </div>
-            <div fxLayout="row wrap" fxLayoutGap="10" class="gap-3">
-              <button
-                mat-fab
-                extended
-                style="background-color: #eeeeee; color: black"
-                class="text-sm"
-              >
-                <mat-icon class="text-base">person_add</mat-icon>
-                Group order
-              </button>
-              <button
-                mat-fab
-                extended
-                style="background-color: #eeeeee; color: black"
-                class="text-sm"
-              >
-                <mat-icon class="text-base">event_note</mat-icon>
-                Schedule
-              </button>
-            </div>
-          </div>
-  
-          <div class="">
-            <div class="">
-              <div fxFlex="1 0 auto" [fxFlex.lt-lg]="0" fxHide.lt-sm class="w-[306px] hidden min-[820px]:block ">
-                <div
-                  fxLayout="column"
-                  fxLayoutGap="8"
-                  class="sticky top-20 left-0 w-full"
-                >
-                  <mat-list role="list" class="text-base">
-                    <mat-list-item role="listitem" class="underline">Featured items</mat-list-item>
-                    <mat-list-item role="listitem">Iced Drinks</mat-list-item>
-                    <mat-list-item role="listitem">Hot Drinks</mat-list-item>
-                    <mat-list-item role="listitem">Dunkin' Refreshers & Tea</mat-list-item>
-                    <mat-list-item role="listitem">Sandwiches & Wraps</mat-list-item>
-                    <mat-list-item role="listitem">Frozen Drinks</mat-list-item>
-                    <mat-list-item role="listitem">Snacks & Sides</mat-list-item>
-                    <mat-list-item role="listitem">Donuts & Bakery</mat-list-item>
-                    <mat-list-item role="listitem">Bottled Drinks</mat-list-item>
-                    <mat-list-item role="listitem">Brew at Home</mat-list-item>
-                  </mat-list>
-                </div>
-              </div>
-              <div class=" md:w-full">
-                 <div class="pt-6">
-                    <div>
-                       <div fxLayout="row" fxLayoutAlign="space-between center" class="pb-2">
-                         <div fxLayout="row">
-                          <div>
-                            <div class="text-2xl font-bold">Top Reviews</div>
-                            <p class="pt-1 text-xs sm:text-base text-[#545454]">
-                              Hear from people who love this spot
-                            </p>
-                          </div>
-                         </div>
-                         <div fxLayout="row" fxLayoutGap="40" fxLayoutAlign=" center">
-                           <div class=" text-base font-medium">
-                             <a href="#" fxHide.lt-sm class="underline">See all 6</a>
-                           </div>
-  
-                           <div fxLayout="row" fxLayoutGap="4"  class="">
-                            <button fxLayout="row"  fxLayoutAlign="center center"  class="bg-[#afafaf] w-8 h-8 sm:w-10 sm:h-10 rounded-full">
-                              <mat-icon>arrow_back</mat-icon>
-                            </button>
-                            <button fxLayout="row"  fxLayoutAlign="center center"  class="bg-[#afafaf] w-8 h-8 sm:w-10 sm:h-10 rounded-full">
-                              <mat-icon>arrow_forward</mat-icon>
-                            </button>
-                           </div>
-                         </div>
-                       </div>
-  
-                       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3">
-                          <div fxLayout="row" class="w-full" *ngFor="let item of [1, 2, 3]">
-                            <div class="border p-6 rounded-lg pb-12 w-full min-w-[12.5rem]">
-                              <div class="" fxLayout="row" fxLayoutAlign=" center" fxLayoutGap="12">
-                                <img
-                                  class="rounded-full w-12 h-12 object-cover"
-                                  src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d96375ed3fb7384c.svg"
-                                  alt="Photo of a Shiba Inu"
-                                />
-                                <div fxLayout="column" class="">
-                                  <span class="font-medium text-base">Rashika B.</span>
-                                  <span class="text-sm text-[#6B6B6B] pt-1"
-                                    >2 months ago</span
-                                  >
-                                </div>
-                              </div>
-                              <div class="pt-5 text-base">Good drink</div>
-                            </div>
-                          </div>
-                       </div>       
-  
-                       <section>
-                          <div fxLayout="row" fxLayoutAlign="space-between center" class="pb-2 pt-10">
-                            <div fxLayout="row">
-                              <div>
-                                <div class="text-2xl font-bold">Featured items</div>
-                              </div>
-                            </div>
-                              <div fxLayout="row" fxLayoutGap="4"  class="">
-                                <button fxLayout="row"  fxLayoutAlign="center center"  class="bg-[#afafaf] w-8 h-8 sm:w-10 sm:h-10 rounded-full">
-                                  <mat-icon>arrow_back</mat-icon>
-                                </button>
-                                <button fxLayout="row"  fxLayoutAlign="center center"  class="bg-[#afafaf] w-8 h-8 sm:w-10 sm:h-10 rounded-full">
-                                  <mat-icon>arrow_forward</mat-icon>
-                                </button>
-                              </div>
-                          </div>
-  
-                          <div class="pb-4 grid grid-cols-2  gap-2 sm:grid-cols-2 sm:gap-3 lg:grid-cols-4">
-                            <mat-card *ngFor="let item of [1, 2, 3, 4]" class="w-auto p-2 hover:shadow-xl">
-                              <div class="w-full h-[188px] relative">
-                                <img mat-card-image class="w-full h-full object-cover " src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMjhkMzBlZGY2NjEzMDVjMWJhODkzMjIzZjU2ODVjMDkvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==" alt="">
-                                <div class="bg-neutral-200 w-full h-[11rem] opacity-25 absolute top-0 left-0 "></div>
-                              </div>
-                              <mat-card-content fxLayout="column">
-                                <span class="text-base font-medium ">
-                                  Bacon Egg and Cheese
-                                </span>
-                                <span class="text-gray-600">$3.19</span>
-                              </mat-card-content>
-                            </mat-card>
-                          </div>
-                       </section>
-  
-                       <section class="pt-14">
-                         <div class="">
-                            <div class="">
-                              <div class="text-2xl font-bold">Iced Drinks</div>
-                            </div>
-  
-                            <div class="pb-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3">
-                              <mat-card *ngFor="let item of [1, 2, 3, 4]" fxLayout="column" class="w-full p-2 mb-4 hover:shadow-xl">
-                                <div class="w-full h-[188px] relative">
-                                  <img mat-card-image class="w-full h-full object-cover " src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODlhN2Q4ODdmOWE2MWQxODVhNDk2NTY4NjAzNDRhYWYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw==" alt="">
-                                  <div class="bg-neutral-200 w-full h-[11rem] opacity-25 absolute top-0 left-0 "></div>
-                                </div>
-                                <mat-card-content fxLayout="column">
-                                  <span class="text-base font-medium ">
-                                    Iced Latte
-                                  </span>
-                                  <span class="text-gray-600">Priced by add-ons</span>
-                                  <div class="py-1">
-                                     <span  class="bg-gray-300 w-full rounded-full px-2 py-1 text-xs">91% (12)</span>
-                                  </div>
-                                </mat-card-content>
-                              </mat-card>
-                            </div>
-                         </div>
-                       </section>
-                    </div>
-                 </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class=""></div>
-  
-          <div class="" fxLayout="row" fxLayoutGap="60"  fxLayoutGap.lt-sm="30" fxLayout.lt-sm="column" class="pt-16 sm:py-16">
+      <div class="px-4 py-8 lg:px-10">
+        <div class="pb-6">
+          <span class="text-xl font-bold sm:text-4xl"
+            >Dunkin' (98 Forsyth St Nw # 100)</span
+          >
+          <div class="pb-8 text-xs sm:text-sm">
             <div>
-              <div class="text-3xl sm:text-4xl font-bold">5-Star Reviews</div>
-              <p class="sm:pt-3 text-base text-[#545454]">
-                Hear from people who love this spot
-              </p>
+              4.3 (37 ratings) • Breakfast and Brunch • $ •
+              <a href="#" class="underline">Read 5-Star Reviews</a>
+              •
+              <a href="#" class="underline">More info</a>
             </div>
-            <div class="flex-1">
-              <mat-list fxLayout="column" fxLayoutGap="32">
-                <div>
-                  <div class="" fxLayout="row" fxLayoutGap="12">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover"
-                      src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/3ed0fb233b69a3de.svg"
-                      alt="Photo of a Shiba Inu"
-                    />
-                    <div fxLayout="column" class="">
-                      <span class="font-medium text-base">Rashika B.</span>
-                      <span class="text-sm text-[#6B6B6B] pt-1"
-                        >2 months ago</span
-                      >
-                    </div>
-                  </div>
-                  <div class="pt-5 text-base">Good drink</div>
-                </div>
-                <mat-divider></mat-divider>
-                <div>
-                  <div class="" fxLayout="row" fxLayoutGap="12">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover"
-                      src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d96375ed3fb7384c.svg"
-                      alt="Photo of a Shiba Inu"
-                    />
-                    <div fxLayout="column" class="">
-                      <span class="font-medium text-base">Rashika B.</span>
-                      <span class="text-sm text-[#6B6B6B] pt-1"
-                        >2 months ago</span
-                      >
-                    </div>
-                  </div>
-                  <div class="pt-5 text-base">Good drink</div>
-                </div>
-                <mat-divider></mat-divider>
-                <div>
-                  <div class="" fxLayout="row" fxLayoutGap="12">
-                    <img
-                      class="rounded-full w-12 h-12 object-cover"
-                      src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/9f716d4b83f1173e.svg"
-                      alt="Photo of a Shiba Inu"
-                    />
-                    <div fxLayout="column" class="">
-                      <span class="font-medium text-base">Rashika B.</span>
-                      <span class="text-sm text-[#6B6B6B] pt-1"
-                        >2 months ago</span
-                      >
-                    </div>
-                  </div>
-                  <div class="pt-5 text-base">Good drink</div>
-                </div>
-              </mat-list>
+            <span class="text-[#545454] text-xs sm:text-sm pt-1"
+              >Closed • Available Saturday 6:30 AM</span
+            >
+          </div>
+          <div fxLayout="row wrap" fxLayoutGap="10" class="gap-3">
+            <button
+              mat-fab
+              extended
+              style="background-color: #eeeeee; color: black"
+              class="text-sm"
+            >
+              <mat-icon class="text-base">person_add</mat-icon>
+              Group order
+            </button>
+            <button
+              mat-fab
+              extended
+              style="background-color: #eeeeee; color: black"
+              class="text-sm"
+            >
+              <mat-icon class="text-base">event_note</mat-icon>
+              Schedule
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <div
+              fxFlex="1 0 auto"
+              [fxFlex.lt-lg]="0"
+              fxHide.lt-sm
+              class="w-[306px] hidden min-[820px]:block"
+            >
+              <div
+                fxLayout="column"
+                fxLayoutGap="8"
+                class="sticky top-20 left-0 w-full"
+              >
+                <mat-list role="list" class="text-base">
+                  <mat-list-item role="listitem" class="underline"
+                    >Featured items</mat-list-item
+                  >
+                  <mat-list-item role="listitem">Iced Drinks</mat-list-item>
+                  <mat-list-item role="listitem">Hot Drinks</mat-list-item>
+                  <mat-list-item role="listitem"
+                    >Dunkin' Refreshers & Tea</mat-list-item
+                  >
+                  <mat-list-item role="listitem"
+                    >Sandwiches & Wraps</mat-list-item
+                  >
+                  <mat-list-item role="listitem">Frozen Drinks</mat-list-item>
+                  <mat-list-item role="listitem">Snacks & Sides</mat-list-item>
+                  <mat-list-item role="listitem">Donuts & Bakery</mat-list-item>
+                  <mat-list-item role="listitem">Bottled Drinks</mat-list-item>
+                  <mat-list-item role="listitem">Brew at Home</mat-list-item>
+                </mat-list>
+              </div>
             </div>
+
+            <div class="w-full md:w-full">
+              <div class="pt-6">
+                <div>
+                  <div
+                    fxLayout="row"
+                    fxLayoutAlign="space-between center"
+                    class="pb-2"
+                  >
+                    <div fxLayout="row">
+                      <div>
+                        <div class="text-2xl font-bold">Top Reviews</div>
+                        <p class="pt-1 text-xs sm:text-base text-[#545454]">
+                          Hear from people who love this spot
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      fxLayout="row"
+                      fxLayoutGap="40"
+                      fxLayoutAlign=" center"
+                    >
+                      <div class="text-base font-medium">
+                        <a href="#" fxHide.lt-sm class="underline">See all 6</a>
+                      </div>
+
+                      <div fxLayout="row" fxLayoutGap="4">
+                        <button
+                          fxLayout="row"
+                          fxLayoutAlign="center center"
+                          class="bg-[#afafaf] w-8 h-8 sm:w-10 sm:h-10 rounded-full"
+                        >
+                          <mat-icon>arrow_back</mat-icon>
+                        </button>
+                        <button
+                          fxLayout="row"
+                          fxLayoutAlign="center center"
+                          class="bg-[#afafaf] w-8 h-8 sm:w-10 sm:h-10 rounded-full"
+                        >
+                          <mat-icon>arrow_forward</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3"
+                  >
+                    <div
+                      fxLayout="row"
+                      class="w-full"
+                      *ngFor="let item of [1, 2, 3]"
+                    >
+                      <div
+                        class="border p-6 rounded-lg pb-12 w-full min-w-[12.5rem]"
+                      >
+                        <div
+                          class=""
+                          fxLayout="row"
+                          fxLayoutAlign=" center"
+                          fxLayoutGap="12"
+                        >
+                          <img
+                            class="rounded-full w-12 h-12 object-cover"
+                            src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d96375ed3fb7384c.svg"
+                            alt="Photo of a Shiba Inu"
+                          />
+                          <div fxLayout="column">
+                            <span class="font-medium text-base"
+                              >Rashika B.</span
+                            >
+                            <span class="text-sm text-[#6B6B6B] pt-1"
+                              >2 months ago</span
+                            >
+                          </div>
+                        </div>
+                        <div class="pt-5 text-base">Good drink</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <section>
+                    <div
+                      fxLayout="row"
+                      fxLayoutAlign="space-between center"
+                      class="pb-2 pt-10"
+                    >
+                      <div fxLayout="row">
+                        <div>
+                          <div class="text-2xl font-bold">Featured items</div>
+                        </div>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="4">
+                        <button
+                          fxLayout="row"
+                          fxLayoutAlign="center center"
+                          class="bg-[#afafaf] w-8 h-8 sm:w-10 sm:h-10 rounded-full"
+                        >
+                          <mat-icon>arrow_back</mat-icon>
+                        </button>
+                        <button
+                          fxLayout="row"
+                          fxLayoutAlign="center center"
+                          class="bg-[#afafaf] w-8 h-8 sm:w-10 sm:h-10 rounded-full"
+                        >
+                          <mat-icon>arrow_forward</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      class="pb-4 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3 lg:grid-cols-4"
+                    >
+                      <mat-card
+                        *ngFor="let item of [1, 2, 3, 4]"
+                        class="w-auto p-2 hover:shadow-xl cursor-pointer"
+                      >
+                        <div class="w-full h-[120px] sm:h-[188px] relative">
+                          <img
+                            mat-card-image
+                            class="w-full h-full object-contain"
+                            src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvMjhkMzBlZGY2NjEzMDVjMWJhODkzMjIzZjU2ODVjMDkvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw=="
+                            alt=""
+                          />
+                          <div
+                            class="bg-neutral-200 w-full h-full sm:h-[11rem] opacity-25 absolute top-0 left-0"
+                          ></div>
+                        </div>
+                        <mat-card-content fxLayout="column" class="mt-2">
+                          <span class="text-base font-medium">
+                            Bacon Egg and Cheese
+                          </span>
+                          <span class="text-gray-600">$3.19</span>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </section>
+
+                  <section class="pt-14" *ngFor="let item of [1, 2, 3, 4]">
+                    <div>
+                      <div class="pb-4">
+                        <div class="text-2xl font-bold">Iced Drinks</div>
+                      </div>
+
+                      <div
+                        class="pb-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3"
+                      >
+                        <mat-card
+                          *ngFor="let item of [1, 2, 3, 4, 5]"
+                          fxLayout="column"
+                          class="w-full p-2 mb-4 hover:shadow-xl group relative"
+                        >
+                          <div class="w-full h-[160px] sm:h-[180px] relative">
+                            <img
+                              mat-card-image
+                              class="w-full h-full object-contain"
+                              src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvODlhN2Q4ODdmOWE2MWQxODVhNDk2NTY4NjAzNDRhYWYvNTk1NGJjYjAwNmIxMGRiZmQwYmMxNjBmNjM3MGZhZjMuanBlZw=="
+                              alt=""
+                            />
+                            <div
+                              class="bg-neutral-200 w-full h-full sm:h-[11rem] opacity-25 absolute top-0 left-0"
+                            ></div>
+                          </div>
+                          <mat-card-content fxLayout="column" class="mt-2">
+                            <span class="text-base font-medium">
+                              Iced Latte
+                            </span>
+                            <span class="text-gray-600">Priced by add-ons</span>
+                            <div class="py-1">
+                              <span
+                                class="bg-gray-300 w-full rounded-full px-2 py-1 text-xs"
+                                >91% (12)</span
+                              >
+                            </div>
+                            <div
+                              class="hidden group-hover:block transition-all absolute top-1/3 left-1/3"
+                            >
+                              <a
+                                mat-fab
+                                extended
+                                routerLink="/"
+                                class="bg-black"
+                              >
+                                Quick view
+                              </a>
+                            </div>
+                          </mat-card-content>
+                        </mat-card>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+          fxLayout="row"
+          fxLayoutGap="60"
+          fxLayoutGap.lt-sm="30"
+          fxLayout.lt-sm="column"
+          class="pt-16 sm:py-16"
+        >
+          <div>
+            <div class="text-3xl sm:text-4xl font-bold">5-Star Reviews</div>
+            <p class="sm:pt-3 text-base text-[#545454]">
+              Hear from people who love this spot
+            </p>
+          </div>
+          <div class="flex-1">
+            <mat-list fxLayout="column" fxLayoutGap="32">
+              <div>
+                <div class="" fxLayout="row" fxLayoutGap="12">
+                  <img
+                    class="rounded-full w-12 h-12 object-cover"
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/3ed0fb233b69a3de.svg"
+                    alt="Photo of a Shiba Inu"
+                  />
+                  <div fxLayout="column" class="">
+                    <span class="font-medium text-base">Rashika B.</span>
+                    <span class="text-sm text-[#6B6B6B] pt-1"
+                      >2 months ago</span
+                    >
+                  </div>
+                </div>
+                <div class="pt-5 text-base">Good drink</div>
+              </div>
+              <mat-divider></mat-divider>
+              <div>
+                <div class="" fxLayout="row" fxLayoutGap="12">
+                  <img
+                    class="rounded-full w-12 h-12 object-cover"
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d96375ed3fb7384c.svg"
+                    alt="Photo of a Shiba Inu"
+                  />
+                  <div fxLayout="column" class="">
+                    <span class="font-medium text-base">Rashika B.</span>
+                    <span class="text-sm text-[#6B6B6B] pt-1"
+                      >2 months ago</span
+                    >
+                  </div>
+                </div>
+                <div class="pt-5 text-base">Good drink</div>
+              </div>
+              <mat-divider></mat-divider>
+              <div>
+                <div class="" fxLayout="row" fxLayoutGap="12">
+                  <img
+                    class="rounded-full w-12 h-12 object-cover"
+                    src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/9f716d4b83f1173e.svg"
+                    alt="Photo of a Shiba Inu"
+                  />
+                  <div fxLayout="column" class="">
+                    <span class="font-medium text-base">Rashika B.</span>
+                    <span class="text-sm text-[#6B6B6B] pt-1"
+                      >2 months ago</span
+                    >
+                  </div>
+                </div>
+                <div class="pt-5 text-base">Good drink</div>
+              </div>
+            </mat-list>
           </div>
         </div>
       </div>
     </div>
-  </main>
-  
+  </div>
+</main>
