@@ -8,21 +8,33 @@ import { StoreCardComponent } from './shared/components/store-card/store-card.co
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-<<<<<<< HEAD
-
 import { StoreItemComponent } from './store-item/store-item.component';
 import { CartComponent } from './shared/components/cart/cart.component';
 import { DeliveryLocationModalComponent } from './shared/components/delivery-location-modal/delivery-location-modal.component';
-=======
->>>>>>> 7008068 (modal first commit)
 
 @NgModule({
     declarations: [
         AppComponent
+import { StoreComponent } from './store/store.component';
+import { StoreItemComponent } from './store-item/store-item.component';
+import { CartComponent } from './shared/components/cart/cart.component';
+
+@NgModule({
+    declarations: [
+        AppComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
+        BrowserModule,
+        CommonModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        RouterOutlet,
+        NavbarComponent,
+        StoreCardComponent,
+        FooterComponent,
+        StoreComponent,
       BrowserModule,
       CommonModule,
       AppRoutingModule,
