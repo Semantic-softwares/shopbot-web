@@ -15,26 +15,10 @@ import { DeliveryLocationModalComponent } from './shared/components/delivery-loc
 @NgModule({
     declarations: [
         AppComponent
-import { StoreComponent } from './store/store.component';
-import { StoreItemComponent } from './store-item/store-item.component';
-import { CartComponent } from './shared/components/cart/cart.component';
-
-@NgModule({
-    declarations: [
-        AppComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
-        BrowserModule,
-        CommonModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        RouterOutlet,
-        NavbarComponent,
-        StoreCardComponent,
-        FooterComponent,
-        StoreComponent,
       BrowserModule,
       CommonModule,
       AppRoutingModule,
@@ -44,6 +28,7 @@ import { CartComponent } from './shared/components/cart/cart.component';
       StoreCardComponent,
       FooterComponent,
       StoreItemComponent,
+      DeliveryLocationModalComponent,
       CartComponent
     ]
 })
