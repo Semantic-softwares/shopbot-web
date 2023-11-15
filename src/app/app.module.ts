@@ -14,7 +14,7 @@ import { DeliveryLocationModalComponent } from './shared/components/delivery-loc
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
