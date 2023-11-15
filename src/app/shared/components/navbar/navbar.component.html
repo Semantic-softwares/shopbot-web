@@ -60,18 +60,19 @@
       </div>
 
       <div fxLayoutAlign="center center" fxLayoutGap="16" class="gap-2 text-sm">
-        <div
+        <a
+        routerLink="/cart"
           fxLayoutAlign="center center"
           class=" bg-transparent text-black sm:bg-black sm:text-white p-3 rounded-full h-9 relative"
         >
           <mat-icon fxHide.lt-sm class="text-3 sm:text-[1.1rem] pt-[1.7px] fon">shopping_cart</mat-icon>
           <mat-icon fxHide.gt-xs="" matBadge="15" matBadgeColor="warn">shopping_cart</mat-icon>
           <span class="rounded-xl text-ms hidden sm:block">Cart.0</span>
-        </div>
+      </a>
 
         <div fxLayoutAlign="center center" fxLayoutGap="18" fxHide.lt-sm="">
           <a
-            href="#"
+            routerLink="/login-page"
             fxLayoutAlign="center center"
             fxLayoutGap="1"
             class="rounded-full bg-secondary p-3 h-9 text-black"
