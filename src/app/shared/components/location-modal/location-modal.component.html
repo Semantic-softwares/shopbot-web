@@ -1,0 +1,16 @@
+<div fxLayout="column" fxLayoutLAlign="center center" class="bg-[white] p-4 ">
+  <div fxLayoutGap="2rem" class="ml-4">
+    <div class=" h-[3rem] w-[3rem] rounded-[3rem] transition-all hover:bg-zinc-300 cursor-pointer"
+      (click)="closeDialog()">
+      <mat-icon class="m-3" aria-hidden="false" aria-label="Example home icon" fontIcon="close"></mat-icon>
+    </div>
+    <div class="font-bold text text-[2rem] mt-9">Deliver to</div>
+  </div>
+  <mat-form-field class="w-full">
+    <div class="border-b-[2px] h-[3rem] w-full flex items-center focus:border-b-[4px]" fxLayout="row" fxLayoutGap="1rem"
+      fxLayoutAlign="start center">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="location_on"></mat-icon>
+      <input class="w-[80%] h-[2.5rem] outline-none border-none" matInput type="search">
+    </div>
+  </mat-form-field>
+</div>

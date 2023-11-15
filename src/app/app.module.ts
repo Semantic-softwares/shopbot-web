@@ -8,27 +8,17 @@ import { StoreCardComponent } from './shared/components/store-card/store-card.co
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { StoreComponent } from './store/store.component';
 import { StoreItemComponent } from './store-item/store-item.component';
 import { CartComponent } from './shared/components/cart/cart.component';
+import { DeliveryLocationModalComponent } from './shared/components/delivery-location-modal/delivery-location-modal.component';
 
 @NgModule({
     declarations: [
-        AppComponent,
-
+        AppComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
-        BrowserModule,
-        CommonModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        RouterOutlet,
-        NavbarComponent,
-        StoreCardComponent,
-        FooterComponent,
-        StoreComponent,
       BrowserModule,
       CommonModule,
       AppRoutingModule,
@@ -38,6 +28,7 @@ import { CartComponent } from './shared/components/cart/cart.component';
       StoreCardComponent,
       FooterComponent,
       StoreItemComponent,
+      DeliveryLocationModalComponent,
       CartComponent
     ]
 })
