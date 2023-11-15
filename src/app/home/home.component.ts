@@ -7,6 +7,7 @@ import { BannerComponent } from '../shared/components/banner/banner.component';
 import { FiltersComponent } from '../shared/components/filters/filters.component';
 import { StoreCardComponent } from '../shared/components/store-card/store-card.component';
 import { CategoryCardComponent } from '../shared/components/category-card/category-card.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
 	selector: 'home',
@@ -20,7 +21,8 @@ import { CategoryCardComponent } from '../shared/components/category-card/catego
 		BannerComponent, 
 		FiltersComponent, 
 		StoreCardComponent, 
-		CategoryCardComponent
+		CategoryCardComponent,
+		RouterModule,
 	]
 })
 
