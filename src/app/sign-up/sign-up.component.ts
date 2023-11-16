@@ -4,6 +4,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -13,7 +14,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CommonModule,
     MatFormFieldModule, 
     MatInputModule, 
-    MatIconModule
+    MatIconModule,
+    RouterModule
   ],
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.scss']
