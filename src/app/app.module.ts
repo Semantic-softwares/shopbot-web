@@ -15,11 +15,13 @@ import { DeliveryLocationModalComponent } from './shared/components/delivery-loc
 import { ItemCardComponent } from './shared/components/item-card/item-card.component';
 import { ItemReviewComponent } from './shared/components/item-review/item-review.component';
 import { CheckOutComponent } from './check-out/check-out.component';
-
+import { CategoryStoreComponent } from './category-store/category-store.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+
+
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -40,6 +42,7 @@ import { CheckOutComponent } from './check-out/check-out.component';
       SignUpComponent,
       CartComponent,
       CheckOutComponent,
+      CategoryStoreComponent,
     ]
 })
 export class AppModule { }
