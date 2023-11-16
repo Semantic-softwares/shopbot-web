@@ -11,10 +11,12 @@ import { CommonModule } from '@angular/common';
 import { StoreItemComponent } from './store-item/store-item.component';
 import { CartComponent } from './shared/components/cart/cart.component';
 import { DeliveryLocationModalComponent } from './shared/components/delivery-location-modal/delivery-location-modal.component';
+import { CategoryStoreComponent } from './category-store/category-store.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -29,7 +31,8 @@ import { DeliveryLocationModalComponent } from './shared/components/delivery-loc
       FooterComponent,
       StoreItemComponent,
       DeliveryLocationModalComponent,
-      CartComponent
+      CartComponent,
+      CategoryStoreComponent,
     ]
 })
 export class AppModule { }
