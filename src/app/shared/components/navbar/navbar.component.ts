@@ -13,7 +13,6 @@ import { DeliveryLocationModalComponent } from '../delivery-location-modal/deliv
 	styleUrls: ['./navbar.component.scss'],
 	standalone: true,
 	imports: [MatToolbarModule, MatIconModule, FlexLayoutModule, MatButtonModule, MatBadgeModule, MatDialogModule]
-
 })
 
 export class NavbarComponent implements OnInit {
