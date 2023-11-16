@@ -4,6 +4,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatBadgeModule} from '@angular/material/badge';
+import { RouterModule } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DeliveryLocationModalComponent } from '../delivery-location-modal/delivery-location-modal.component';
 
@@ -12,7 +13,7 @@ import { DeliveryLocationModalComponent } from '../delivery-location-modal/deliv
 	templateUrl: './navbar.component.html',
 	styleUrls: ['./navbar.component.scss'],
 	standalone: true,
-	imports: [MatToolbarModule, MatIconModule, FlexLayoutModule, MatButtonModule, MatBadgeModule, MatDialogModule]
+imports: [MatToolbarModule, MatIconModule, FlexLayoutModule, MatButtonModule, MatBadgeModule, MatDialogModule, RouterModule]
 })
 
 export class NavbarComponent implements OnInit {
