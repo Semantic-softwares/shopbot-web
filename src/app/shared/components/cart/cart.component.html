@@ -77,7 +77,7 @@
       </div>
       <hr class="my-4" />
       <div fxLayout="row" fxLayoutAlign="space-between center">
-        <p fxLayout="row"  fxLayoutAlign="center center" class="text-gray-700 gap-2">Shipping Estimate <a href="" title="Shipping Information"><svg
+        <p fxLayout="row"  fxLayoutAlign="center center" class="text-gray-700 gap-2">Shipping Estimate <a routerLink="/" title="Shipping Information"><svg
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
               class="h-5 w-5 text-gray-400 hover:text-gray-800">
               <path fill-rule="evenodd"
@@ -93,8 +93,10 @@
           <p class="mb-1 text-base font-bold">$134.98 USD</p>
         </div>
       </div>
-      <button class="mt-6 w-full rounded-md bg-black py-4 font-medium text-blue-50 hover:opacity-80">Check
-        out</button>
+      <a routerLink="/check-out">
+        <button class="mt-6 w-full rounded-md bg-black py-4 font-medium text-blue-50 hover:opacity-80">Check
+          out</button>
+      </a>
     </div>
   </div>
 </div>
