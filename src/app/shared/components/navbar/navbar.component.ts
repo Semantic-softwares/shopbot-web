@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 	templateUrl: './navbar.component.html',
 	styleUrls: ['./navbar.component.scss'],
 	standalone: true,
-	imports: [MatToolbarModule, MatIconModule, FlexLayoutModule, MatButtonModule, MatBadgeModule]
+	imports: [MatToolbarModule, MatIconModule, FlexLayoutModule, MatButtonModule, MatBadgeModule, RouterModule]
 })
 
 export class NavbarComponent implements OnInit {
