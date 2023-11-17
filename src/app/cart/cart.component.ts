@@ -11,5 +11,5 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [FlexLayoutModule, RouterModule]
 })
 export class CartComponent {
-
+  
 }
