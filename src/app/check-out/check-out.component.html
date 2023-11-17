@@ -7,15 +7,21 @@
         <div fxLayout="column" fxLayoutGap="1.5rem" class="w-full">
             <a routerLink="/">
                 <div fxLayout="row" fxFlex="100%" fxLayoutAlign="space-between center" 
-                    class="text-gray-700 bg-neutral-100 py-5 px-3 rounded-xl text-sm font-thin hover:bg-neutral-200">
-                    <div>Returning Customer?</div>
+                    class="text-gray-700 bg-neutral-100 py-5 px-3 md:px-5 rounded-xl text-sm font-thin hover:bg-neutral-200">
+                    <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="center center">
+                        <mat-icon>account_box</mat-icon>
+                        <div>Returning Customer?</div>
+                    </div>
                     <div class="hover:underline">Click here to Login</div>
                 </div>
             </a>
             <a routerLink="/">
                 <div fxLayout="row" fxFlex="100%" fxLayoutAlign="space-between center" 
-                    class="text-gray-700 bg-neutral-100 py-5 px-3 rounded-xl text-sm font-thin hover:bg-neutral-200">
-                    <div>Have a coupon?</div>
+                    class="text-gray-700 bg-neutral-100 py-5 px-3 md:px-5 rounded-xl text-sm font-thin hover:bg-neutral-200">
+                    <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="center center">
+                        <mat-icon>redeem</mat-icon>
+                        <div>Have a coupon?</div>
+                    </div>
                     <div class="hover:underline">Click here to enter code</div>
                 </div>
             </a>
@@ -46,7 +52,7 @@
                                 </div>
                             </label>
                             <label class="mt-px font-medium text-black cursor-pointer select-none" for="address-details">
-                                Remember Me
+                                Ship to a new address
                             </label>
                         </div>
                     </div>
@@ -119,10 +125,11 @@
                         </div>
                     </div>
                     <div class="mt-10">
-                        <button type="submit" class="bg-black w-full rounded-lg text-white font-semibold p-3 hover:opacity-80">
+                        <button type="submit" class="bg-black w-full rounded-lg text-white text-lg
+                         font-semibold p-3 hover:opacity-80 tracking-wide">
                             <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="center center">
                                 <div>Place Order</div>
-                                <div><mat-icon>check</mat-icon></div>
+                                <mat-icon>arrow_forward_ios</mat-icon>
                             </div>
                         </button>
                     </div>
