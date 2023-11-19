@@ -9,9 +9,13 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { StoreItemComponent } from './store-item/store-item.component';
-import { CartComponent } from './shared/components/cart/cart.component';
+import { CartComponent } from './cart/cart.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { DeliveryLocationModalComponent } from './shared/components/delivery-location-modal/delivery-location-modal.component';
+import { ItemCardComponent } from './shared/components/item-card/item-card.component';
+import { ItemReviewComponent } from './shared/components/item-review/item-review.component';
+import { CheckOutComponent } from './check-out/check-out.component';
+
 
 @NgModule({
     declarations: [
@@ -30,8 +34,12 @@ import { DeliveryLocationModalComponent } from './shared/components/delivery-loc
       FooterComponent,
       StoreItemComponent,
       DeliveryLocationModalComponent,
+      CartComponent,
+      ItemCardComponent,
+      ItemReviewComponent,
       SignUpComponent,
-      CartComponent
+      CartComponent,
+      CheckOutComponent,
     ]
 })
 export class AppModule { }
