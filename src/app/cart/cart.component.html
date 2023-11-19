@@ -1,21 +1,24 @@
 <div class="pt-20">
-  <h1 class="py-5 text-center text-3xl font-bold">My Cart</h1>
+  <div class="pt-5 pb-8 font-black text-4xl text-center">My Cart</div>
   <div fxLayoutAlign="center" fxLayout.xs="column" class="mx-auto max-w-5xl px-6 md:space-x-6 xl:px-0 relative">
     <div class="rounded-lg md:w-2/3">
-      <hr>
       <div fxLayoutAlign="space-between center" fxLayout.xs="column" class="mb-6 rounded-lg bg-white p-6 sm:flex">
-        <img
-          src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZDNkNjc0ZDM0ZTAwNzlmNzEyMjA1ZDYyNzQ1MDcxY2EvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw=="
-          alt="product-image" class="w-full rounded-lg sm:w-40 object-cover" />
+        <a routerLink="/store">
+          <img
+            src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvZDNkNjc0ZDM0ZTAwNzlmNzEyMjA1ZDYyNzQ1MDcxY2EvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw=="
+            alt="product-image" class="w-full rounded-lg sm:w-40 object-cover" />
+        </a>
         <div fxLayout="row" fxLayoutAlign="space-between center" class="ml-4 smfull sm:justify-between w-full">
           <div class="mt-5 sm:mt-0">
-            <h2 class="text-lg font-bold text-gray-900 truncate-text whitespace-nowrap overflow-hidden text-ellipsis w-full max-w-[8rem] sm:max-w-[15rem]">Chick-fil-A (401 Bill Kennedy Way SE)</h2>
+            <a routerLink="/store">            
+              <h2 class="text-lg font-bold text-gray-900 truncate-text whitespace-nowrap overflow-hidden text-ellipsis w-full max-w-[8rem] sm:max-w-[15rem]">Chick-fil-A (401 Bill Kennedy Way SE)</h2>
+            </a>
             <p class="mt-1 text-xs text-gray-400">10 -25 min</p>
             <div fxLayout="row" fxLayoutAlign="start center" class="border-gray-100">
               <span
                 class="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-black hover:text-blue-50">
                 - </span>
-              <input class="h-8 w-8 border bg-white text-center text-xs outline-none" type="number" value="2" min="1" />
+              <input class="h-8 w-8 border bg-white text-center text-xs outline-none" type="number" value="1" min="1" />
               <span
                 class="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-black hover:text-blue-50">
                 + </span>
@@ -36,18 +39,22 @@
       </div>
       <hr>
       <div fxLayoutAlign="space-between center" fxLayout.xs="column" class="mb-6 rounded-lg bg-white p-6 sm:flex">
-        <img
-          src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOTk4MThhNGQ0YjdlYjE4NzZmYzJhZDVmYmRmNWYxNTUvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw=="
-          alt="product-image" class="w-full rounded-lg sm:w-40 object-cover" />
+        <a routerLink="/store">
+          <img
+            src="https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC9pbWFnZS1wcm9jL3Byb2Nlc3NlZF9pbWFnZXMvOTk4MThhNGQ0YjdlYjE4NzZmYzJhZDVmYmRmNWYxNTUvYTcwZjVjOWRmNDQwZDEwMjEzZTkzMjQ0ZTllYjdjYWQuanBlZw=="
+            alt="product-image" class="w-full rounded-lg sm:w-40 object-cover" />
+        </a>
         <div fxLayout="row" fxLayoutAlign="space-between center" class="ml-4 smfull sm:justify-between w-full">
           <div class="mt-5 sm:mt-0">
-            <h2 class="text-lg font-bold text-gray-900 truncate-text whitespace-nowrap overflow-hidden text-ellipsis w-full max-w-[10rem] sm:max-w-[15rem]">Einstein Bros. Bagels (8th & Peachtree)</h2>
+            <a routerLink="/store">
+              <h2 class="text-lg font-bold text-gray-900 truncate-text whitespace-nowrap overflow-hidden text-ellipsis w-full max-w-[10rem] sm:max-w-[15rem]">Einstein Bros. Bagels (8th & Peachtree)</h2>
+            </a>
             <p class="mt-1 text-xs text-gray-400">10 -25 min</p>
             <div fxLayout="row" fxLayoutAlign="start center" class="border-gray-100">
               <span
                 class="cursor-pointer rounded-l bg-gray-100 py-1 px-3.5 duration-100 hover:bg-black hover:text-blue-50">
                 - </span>
-              <input class="h-8 w-8 border bg-white text-center text-xs outline-none" type="number" value="2" min="1" />
+              <input class="h-8 w-8 border bg-white text-center text-xs outline-none" type="number" value="1" min="1" />
               <span
                 class="cursor-pointer rounded-r bg-gray-100 py-1 px-3 duration-100 hover:bg-black hover:text-blue-50">
                 + </span>
@@ -66,7 +73,6 @@
           </div>
         </div>
       </div>
-      <hr>
     </div>
 
     <div class="mt-6 h-full rounded-lg bg-slate-50 p-6 md:mt-0 md:w-1/3 hover:border  sticky top-20">
@@ -94,8 +100,7 @@
         </div>
       </div>
       <a routerLink="/check-out">
-        <button class="mt-6 w-full rounded-md bg-black py-4 font-medium text-blue-50 hover:opacity-80">Check
-          out</button>
+        <button class="mt-6 w-full rounded-md bg-black py-4 font-medium text-blue-50 hover:opacity-80">Checkout</button>
       </a>
     </div>
   </div>
