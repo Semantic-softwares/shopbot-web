@@ -20,8 +20,7 @@ import { CategoryStoreComponent } from './category-store/category-store.componen
 @NgModule({
     declarations: [
         AppComponent,
-
-
+        
     ],
     providers: [],
     bootstrap: [AppComponent],
