@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CART_ROUTES } from './cart.routing';
+import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @Component({
@@ -7,8 +8,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.scss'],
   standalone: true,
-  imports: [FlexLayoutModule]
+  imports: [FlexLayoutModule, RouterModule]
 })
 export class CartComponent {
-
+  
 }

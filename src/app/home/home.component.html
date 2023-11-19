@@ -5,7 +5,7 @@
         <div fxLayout="row" fxLayoutAlign="space-between center"
           class="py-5 border-b-[1.5px] border-solid border-#eeeeee
           w-full overflow-x-auto lg:overflow-x-hidden">
-          <a href="#" *ngFor="let category of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]">
+          <a routerLink="/" *ngFor="let category of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]">
             <category-card></category-card>
           </a>
         </div>
@@ -69,7 +69,7 @@
                       </div>
                       <div fxLayout="row" fxLayoutGap="40" fxLayoutAlign="center center" fxLayout.lt-sm="column" fxLayoutGap.lt-sm="5">
                         <div class="text-base font-medium -mb-6">
-                          <a href="#" class="underline">See all</a>
+                          <a routerLink="/" class="underline">See all</a>
                         </div>
 
                         <div fxLayout="row" fxLayoutGap="4" fxHide.lt-sm>
@@ -88,7 +88,7 @@
                 </div>
 
                 <div>
-                  <div class="max-w-[52.5rem] mx-auto overflow-x-auto">
+                  <div class="max-w-[55rem] mx-auto overflow-x-auto">
                     <div fxLayout="row" class="gap-4">
                       <a routerLink="/store-item" fxFlex="260px"
                         *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]"
