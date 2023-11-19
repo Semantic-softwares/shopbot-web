@@ -12,7 +12,10 @@ import { StoreItemComponent } from './store-item/store-item.component';
 import { CartComponent } from './cart/cart.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { DeliveryLocationModalComponent } from './shared/components/delivery-location-modal/delivery-location-modal.component';
+import { ItemCardComponent } from './shared/components/item-card/item-card.component';
+import { ItemReviewComponent } from './shared/components/item-review/item-review.component';
 import { CheckOutComponent } from './check-out/check-out.component';
+
 
 @NgModule({
     declarations: [
@@ -31,6 +34,9 @@ import { CheckOutComponent } from './check-out/check-out.component';
       FooterComponent,
       StoreItemComponent,
       DeliveryLocationModalComponent,
+      CartComponent,
+      ItemCardComponent,
+      ItemReviewComponent,
       SignUpComponent,
       CartComponent,
       CheckOutComponent,
