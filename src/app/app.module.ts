@@ -12,6 +12,7 @@ import { StoreItemComponent } from './store-item/store-item.component';
 import { CartComponent } from './cart/cart.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { DeliveryLocationModalComponent } from './shared/components/delivery-location-modal/delivery-location-modal.component';
+import { CheckOutComponent } from './check-out/check-out.component';
 
 @NgModule({
     declarations: [
@@ -31,7 +32,8 @@ import { DeliveryLocationModalComponent } from './shared/components/delivery-loc
       StoreItemComponent,
       DeliveryLocationModalComponent,
       SignUpComponent,
-      CartComponent
+      CartComponent,
+      CheckOutComponent,
     ]
 })
 export class AppModule { }
