@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: '', loadChildren: () => import('./login-page/login-page.component.routing').then(mod => mod.LoginPageComponent_ROUTES)},
   {path: '', loadChildren: () => import('./sign-up/sign-up.component.routing').then(mod => mod.SignUpComponent_ROUTES)},
   {path: '', loadChildren: () => import('./store-item/store-item.routing').then(mod => mod.STOREITEM_ROUTES)},
-  {path: '', loadChildren: () => import('./shared/components/cart/cart.routing').then(mod => mod.CART_ROUTES)},
+  {path: '', loadChildren: () => import('./cart/cart.routing').then(mod => mod.CART_ROUTES)},
 ];
 
 @NgModule({
