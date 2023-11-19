@@ -3,7 +3,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { DeliveryLocationModalComponent } from '../delivery-location-modal/delivery-location-modal.component';
 
 @Component({
   selector: 'app-location-modal',
@@ -18,8 +19,14 @@ import { MatDialog } from '@angular/material/dialog';
   ],
 })
 export class LocationModalComponent {
-  constructor(public dialog: MatDialog) { }
-  closeDialog() {
-    this.dialog.closeAll();
+
+  constructor(public deliveryLocationDialogRef: MatDialogRef<DeliveryLocationModalComponent>, public dialogRef: MatDialogRef<LocationModalComponent>, public dialog: MatDialog) { }
+  closeDialog(): void {
+    if (this.dialogRef) {
+      this.dialogRef.close();
+    }
+    this.dialogRef.afterClosed().subscribe(result => {
+      this.dialog.open(DeliveryLocationModalComponent, { width: '32rem', height: '28rem' });
+    });
   }
 }
