@@ -3,6 +3,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'login-page',
@@ -13,7 +14,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     FlexLayoutModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule
   ]
 })
 export class LoginPageComponent {}
