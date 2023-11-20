@@ -7,7 +7,7 @@
         <div fxLayout="column" fxLayoutGap="1.5rem" class="w-full">
             <a routerLink="/login-page">
                 <div fxLayout="row" fxFlex="100%" fxLayoutAlign="space-between center" 
-                    class="text-gray-700 bg-neutral-100 py-5 px-3 md:px-5 rounded-xl text-sm font-thin hover:bg-neutral-200">
+                    class="text-gray-700 bg-neutral-100 py-5 px-3 md:px-5 rounded-xl text-[0.6rem] sm:text-sm font-thin hover:bg-neutral-200">
                     <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="center center">
                         <mat-icon>account_box</mat-icon>
                         <div>Returning Customer?</div>
@@ -17,7 +17,7 @@
             </a>
             <a routerLink="/">
                 <div fxLayout="row" fxFlex="100%" fxLayoutAlign="space-between center" 
-                    class="text-gray-700 bg-neutral-100 py-5 px-3 md:px-5 rounded-xl text-sm font-thin hover:bg-neutral-200">
+                    class="text-gray-700 bg-neutral-100 py-5 px-3 md:px-5 rounded-xl text-[0.6rem] sm:text-sm font-thin hover:bg-neutral-200">
                     <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="center center">
                         <mat-icon>redeem</mat-icon>
                         <div>Have a coupon?</div>
@@ -31,40 +31,37 @@
                 <div>
                     <div class="text-2xl font-bold py-3">Billing Details</div>
                     <div fxLayout="column" fxLayoutGap="2rem">
-                        <input class="border-[0.08rem] rounded-xl border-gray-300 py-4 px-3" required type="text" name="name" id="name" placeholder="Name">
-                        <input class="border-[0.08rem] rounded-xl border-gray-300 py-4 px-3" required type="email" name="email" id="email" placeholder="Email Address">
-                        <input class="border-[0.08rem] rounded-xl border-gray-300 py-4 px-3" required type="tel" name="phone" id="phone" placeholder="Phone Number">
-                        <input class="border-[0.08rem] rounded-xl border-gray-300 py-4 px-3" required type="text" name="address" id="address" placeholder="Street Address">
-                        <div class="inline-flex items-center">
-                            <label class="relative flex items-center p-3 rounded-full cursor-pointer" for="login" data-ripple-dark="true">
-                                <input id="address-details" type="checkbox"
-                                    class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute 
-                                        before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 
-                                        before:opacity-0 before:transition-opacity checked:border-black checked:bg-black checked:before:bg-black hover:before:opacity-10" />
-                                <div
-                                    class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                                        stroke="currentColor" stroke-width="1">
-                                        <path fill-rule="evenodd"
-                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                            </label>
-                            <label class="mt-px font-medium text-black cursor-pointer select-none" for="address-details">
-                                Ship to a new address
-                            </label>
-                        </div>
+                        <mat-form-field appearance="outline">
+                            <mat-icon matAffix class="ml-2 sm:ml-4">perm_identity</mat-icon>
+                            <input matInput placeholder="Name"
+                             class="py-4 px-3 w-full text-sm" required type="text">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-icon matAffix class="ml-2 sm:ml-4">mail_outline</mat-icon>
+                            <input matInput placeholder="Email Address"
+                             class="py-4 px-3 w-full text-sm" required type="email">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-icon matAffix class="ml-2 sm:ml-4">call</mat-icon>
+                            <input matInput placeholder="Phone Number"
+                             class="py-4 px-3 w-full text-sm" required type="number">
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-icon matAffix class="ml-2 sm:ml-4">place</mat-icon>
+                            <input matInput placeholder="Street Address"
+                             class="py-4 px-3 w-full text-sm" required type="text">
+                        </mat-form-field>
+                        <mat-checkbox>Ship to a new address</mat-checkbox>
                     </div>
                 </div>
                 <div>
                     <div class="mt-10">
                         <div class="text-2xl font-bold py-3">Additional Informational</div>
-                        <div>
-                            <textarea id="message" rows="4"
-                                class="block p-2.5 w-full border-[0.08rem] rounded-xl border-gray-300 py-4 px-3"
+                        <mat-form-field>
+                            <textarea matInput rows="4"
+                                class="block p-2.5 w-full h-36 border-[0.08rem] rounded-xl border-gray-300 py-4 px-3 text-sm"
                                 placeholder="Notes about your order, e.g. notes for special delivery"></textarea>
-                        </div>
+                        </mat-form-field>
                     </div>
                 </div>
             </div>
@@ -129,7 +126,7 @@
                          font-semibold p-3 hover:opacity-80 tracking-wide">
                             <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="center center">
                                 <div>Place Order</div>
-                                <mat-icon>arrow_forward_ios</mat-icon>
+                                <mat-icon>call_to_action</mat-icon>
                             </div>
                         </button>
                     </div>
