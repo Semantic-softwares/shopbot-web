@@ -11,6 +11,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import {RouterModule} from '@angular/router';
 
 @Component({
   selector: 'store',
@@ -29,9 +30,11 @@ import { MatDividerModule } from '@angular/material/divider';
 	 MatChipsModule,
 	 MatExpansionModule,
    MatCardModule,
-   MatDividerModule
+   MatDividerModule,
+   RouterModule
    ]
 })
 export class StoreComponent {
 
 }
+
