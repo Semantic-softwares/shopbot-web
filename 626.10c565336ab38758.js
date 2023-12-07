@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshopbot_web=self.webpackChunkshopbot_web||[]).push([[626],{3626:(e,t,o)=>{o.r(t),o.d(t,{STOREITEM_ROUTES:()=>E});const E=[{path:"store-item",component:o(4024).v}]}}]);

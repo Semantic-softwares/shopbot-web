@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshopbot_web=self.webpackChunkshopbot_web||[]).push([[224],{6224:(c,t,o)=>{o.r(t),o.d(t,{CART_ROUTES:()=>s});const s=[{path:"cart",component:o(9537).P}]}}]);

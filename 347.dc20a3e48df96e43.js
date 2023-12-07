@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshopbot_web=self.webpackChunkshopbot_web||[]).push([[347],{4347:(n,t,o)=>{o.r(t),o.d(t,{CHECKOUT_ROUTES:()=>h});const h=[{path:"check-out",component:o(107)._}]}}]);

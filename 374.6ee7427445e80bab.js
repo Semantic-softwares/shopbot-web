@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkshopbot_web=self.webpackChunkshopbot_web||[]).push([[374],{8374:(e,t,o)=>{o.r(t),o.d(t,{CATEGORYSTORE_ROUTES:()=>E});const E=[{path:"category-store",component:o(8075).M}]}}]);
