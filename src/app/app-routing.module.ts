@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [ 
+  {path: '', loadChildren: () => import('./landing-page/landing-page.routing').then(mod => mod.LANDING_ROUTES)},
   {path: '', loadChildren: () => import('./home/home.routing').then(mod => mod.HOME_ROUTES)},
   {path: '', loadChildren: () => import('./store/store.routing').then(mod => mod.STORE_ROUTES)},
   {path: '', loadChildren: () => import('./store/store.routing').then(mod => mod.STORE_ROUTES)},

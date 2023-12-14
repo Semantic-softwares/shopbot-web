@@ -16,10 +16,12 @@ import { ItemCardComponent } from './shared/components/item-card/item-card.compo
 import { ItemReviewComponent } from './shared/components/item-review/item-review.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { CategoryStoreComponent } from './category-store/category-store.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+       
         
     ],
     providers: [],
@@ -42,6 +44,7 @@ import { CategoryStoreComponent } from './category-store/category-store.componen
       CartComponent,
       CheckOutComponent,
       CategoryStoreComponent,
+      LandingPageComponent,
     ]
 })
 export class AppModule { }

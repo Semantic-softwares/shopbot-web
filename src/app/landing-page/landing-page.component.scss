@@ -1,0 +1,86 @@
+::ng-deep html {
+  --mat-expansion-header-collapsed-state-height: 90px;
+  --mat-expansion-header-hover-state-layer-color: rgba(254, 254, 254, 0.04);
+  --mat-expansion-header-indicator-color: black;
+
+}
+::ng-deeep {
+    .mat-expansion-panel {
+        border: 1px solid #ccc !important;
+        border-radius: 4px !important;
+        overflow: hidden !important;
+        margin-bottom: 16px;
+      }
+      
+      .mat-expansion-panel-header {
+        background-color: #f5f5f5 !important;
+        cursor: pointer;
+      
+        span {
+          font-weight: bold !important;
+        }
+      
+        .mat-icon {
+          font-size: 7px !important;
+        }
+      }
+      
+      p {
+        padding: 12px !important;
+      }
+      .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
+        background-color: none !important;
+      }
+
+      .mat-expansion-panel-body {
+        font-size: 20px;
+      }
+     
+
+     
+      
+}
+::ng-deep.rotate-upward-right {
+    transform: rotate(-45deg) !important;
+  }
+
+  ::ng-deep.mat-expansion-header-hover-state-layer-color {
+    background-color: white !important;
+  }
+
+  ::ng-deep.mat-expansion-panel-header {
+    height: var(--mat-expansion-header-collapsed-state-height) !important;
+
+  }
+  ::ng-deep.mat-expansion-indicator::after {
+    color: var(--mat-expansion-header-indicator-color) !important;
+
+  }
+
+  ::ng-deep.mat-content {
+    display: flex !important;
+    flex: 1;
+    overflow: hidden !important;
+    flex-direction: column-reverse !important;
+}
+  @media screen and (max-width: 600px) {
+    ::ng-deep html {
+      --mat-expansion-header-text-size: 47px;
+      --mat-expansion-header-collapsed-state-height: 200px;
+      --mat-expansion-header-text-line-height: 35px;
+    
+    }
+
+    ::ng-deep.mat-expansion-panel-header {
+      height: var(--mat-expansion-header-collapsed-state-height) !important;
+      font-size: var(--mat-expansion-header-text-size) !important;
+      line-height: var(--mat-expansion-header-text-line-height) !important;
+  
+    }
+
+    ::ng-deep.mat-expansion-panel-body {
+      font-size: 40px;
+    }
+  }
+ 
+  
