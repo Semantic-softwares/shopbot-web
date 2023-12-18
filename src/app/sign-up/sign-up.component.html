@@ -1,4 +1,4 @@
-<form fxLayout="column" fxLayoutAlign="center center" class="pt-20 px-4 h-[110vh] w-full">
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" fxLayout="column" fxLayoutAlign="center center" class="pt-20 px-4 h-[110vh] w-full">
     <div fxLayout="column" fxLayoutGap="1rem" class="min-w-[18rem] max-w-[28rem]">
         <div fxLayout="column" fxLayoutGap="1rem">
             <span class="text-[1.4rem] font-semibold">Let's get you onboard!</span>
@@ -8,7 +8,7 @@
             <mat-form-field appearance="outline">
                 <div fxLayout="row" class="gap-[1rem]" fxLayoutAlign="center center">
                     <mat-icon matSuffix>perm_identity</mat-icon>
-                <input type="text" matInput placeholder="Full Name" required>
+                <input formControlName="name" type="text" matInput placeholder="Full Name" required>
                 </div>
             </mat-form-field>
 
@@ -29,14 +29,17 @@
             <mat-form-field appearance="outline">
                 <div fxLayout="row" class="gap-[1rem]" fxLayoutAlign="center center">
                     <mat-icon type="password" matSuffix>key</mat-icon>
-                <input matInput placeholder="Password" required>
+                <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" required>
                 </div>
-            </mat-form-field>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
         </div>
         <div>
             Already have an account <a href="#" routerLink="/login-page" class="text-base transition-all hover:underline">Login</a>
         </div>
-        <button class="h-[4rem] w-full bg-black text-white text-base rounded-lg transition-all hover:bg-zinc-800">
+        <button type="submit" [disabled]="!registerForm.valid" class="h-[4rem] w-full bg-black text-white text-base rounded-lg transition-all hover:bg-zinc-800">
             Continue
         </button>
     </div>
