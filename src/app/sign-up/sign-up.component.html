@@ -31,7 +31,7 @@
                     <mat-icon type="password" matSuffix>key</mat-icon>
                 <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" required>
                 </div>
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <button class="mr-[1rem]" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                   <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                 </button>
               </mat-form-field>
