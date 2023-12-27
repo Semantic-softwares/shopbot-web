@@ -18,11 +18,13 @@ import { CheckOutComponent } from './check-out/check-out.component';
 import { LoginServiceService } from 'src/services/login-service/login-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { CategoryStoreComponent } from './category-store/category-store.component';
 
 
 @NgModule({
     declarations: [
         AppComponent,
+        
     ],
     providers: [LoginServiceService], 
     bootstrap: [AppComponent],
@@ -45,6 +47,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
       CheckOutComponent,
       LoginPageComponent,
       HttpClientModule,
+      CategoryStoreComponent
     ]
 })
 export class AppModule { }

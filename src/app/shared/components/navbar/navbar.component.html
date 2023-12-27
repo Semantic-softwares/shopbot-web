@@ -16,7 +16,7 @@
         <button mat-icon-button>
           <mat-icon>menu</mat-icon>
         </button>
-        <span class="font-bold text-xl sm:text-3xl">Uber Eats</span>
+        <a href="/" class="font-bold text-xl sm:text-3xl">Uber Eats</a>
       </div>
 
       <div fxLayout="row " fxLayoutGap="1em" class="w-full">
@@ -39,7 +39,8 @@
 
         <div
           fxShow.lt-xl
-          fxHide.lt-mdrouterLink="/cart"
+          fxHide.lt-md
+          routerLink="/cart"
           fxayoutAlign="center center"
           class="w-full"
         >
@@ -67,7 +68,7 @@
           class=" bg-transparent text-black sm:bg-black sm:text-white p-3 rounded-full h-9 relative"
         >
           <mat-icon fxHide.lt-sm class="text-3 sm:text-[1.1rem] pt-[1.7px] fon">shopping_cart</mat-icon>
-          <mat-icon fxHide.gt-xs="" matBadge="15" matBadgeColor="warn">shopping_cart</mat-icon>
+          <!-- <mat-icon fxHide.gt-xs="" matBadge="15" matBadgeColor="warn">shopping_cart</mat-icon> -->
           <span class="rounded-xl text-ms hidden sm:block">Cart.0</span>
       </a>
 
