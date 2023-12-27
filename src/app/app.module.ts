@@ -15,16 +15,18 @@ import { DeliveryLocationModalComponent } from './shared/components/delivery-loc
 import { ItemCardComponent } from './shared/components/item-card/item-card.component';
 import { ItemReviewComponent } from './shared/components/item-review/item-review.component';
 import { CheckOutComponent } from './check-out/check-out.component';
+import { LoginServiceService } from 'src/services/login-service/login-service.service';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginPageComponent } from './login-page/login-page.component';
 import { CategoryStoreComponent } from './category-store/category-store.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 
+
 @NgModule({
     declarations: [
-        AppComponent,
-       
-        
+        AppComponent 
     ],
-    providers: [],
+    providers: [LoginServiceService], 
     bootstrap: [AppComponent],
     imports: [
       BrowserModule,
@@ -45,6 +47,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
       CheckOutComponent,
       CategoryStoreComponent,
       LandingPageComponent,
+      LoginPageComponent,
+      HttpClientModule,
+      CategoryStoreComponent
     ]
 })
 export class AppModule { }
