@@ -19,12 +19,12 @@ import { LoginServiceService } from 'src/services/login-service/login-service.se
 import { HttpClientModule } from '@angular/common/http';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { CategoryStoreComponent } from './category-store/category-store.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
     declarations: [
-        AppComponent,
-        
+        AppComponent 
     ],
     providers: [LoginServiceService], 
     bootstrap: [AppComponent],
@@ -45,6 +45,8 @@ import { CategoryStoreComponent } from './category-store/category-store.componen
       SignUpComponent,
       CartComponent,
       CheckOutComponent,
+      CategoryStoreComponent,
+      LandingPageComponent,
       LoginPageComponent,
       HttpClientModule,
       CategoryStoreComponent
