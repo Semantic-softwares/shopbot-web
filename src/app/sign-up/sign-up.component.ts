@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
+import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { map } from 'rxjs';
 
 
 @Component({
@@ -15,48 +20,67 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   imports: [
     FlexLayoutModule,
     CommonModule,
-    MatFormFieldModule, 
-    MatInputModule, 
+    MatFormFieldModule,
+    MatInputModule,
     MatIconModule,
-    RouterModule, 
+    RouterModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatSelectModule
   ],
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.scss']
 })
-export class SignUpComponent implements OnInit{
+export class SignUpComponent implements OnInit {
   hide = true;
-
-  registerForm!: FormGroup;
-
-  constructor(private fb: FormBuilder) {
-    
-  }
-
+  allCountries: any[] = []
+  selectedOption: any;
+  private host = 'https://shopbot.ngrok.io/';
+  constructor(private http: HttpClient, private router: Router) { }
   ngOnInit() {
-    this.initForm();
+    this.fetchCountry();
+  }
+  onCountryFetch() {
+    this.fetchCountry();
+  }
+  signupForm = new FormGroup({
+    name: new FormControl('', [Validators.required, Validators.minLength(2)]),
+    phonenumber: new FormControl('', [Validators.required, Validators.minLength(6)]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    country: new FormControl('', [Validators.required]),
+    password: new FormControl('', [Validators.required, Validators.minLength(6)]),
+  });
+  SignupData() {
+    if (this.signupForm.invalid) return;
+    console.log(this.signupForm.value);
+    console.log("form submited");
+    const signupEndpoint = this.host + 'users';
+    this.http.post(signupEndpoint, this.signupForm.value).subscribe(
+      (response: any) => {
+        console.log(response);
+        alert('Signup successful!');
+        this.router.navigate(["/"])
+      },
+      (error) => {
+        console.error('Error during signup:', error);
+      }
+    )
+  }
+  private fetchCountry() {
+    this.http.get<any[]>('https://shopbot.ngrok.io/delivery-zones')
+      .pipe(map((resp) => {
+        const countries = [];
+        for (const key in resp) {
+          if (resp.hasOwnProperty(key)) {
+            countries.push({ ...resp[key], id: key })
+          }
+        }
+        return countries;
+      }))
+      .subscribe((countries) => {
+        console.log(countries);
+        this.allCountries = countries;
+      })
   }
 
-
-  initForm() {
-    this.registerForm = this.fb.group({
-      name: ['', [Validators.required, Validators.minLength(2)]],
-      email: ['', [Validators.required, Validators.email]],
-      phoneNumber: ['', [Validators.required, Validators.minLength(6)]],
-      country: ['', Validators.required],
-      currency: ['', Validators.required],
-      currencyCode: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]]
-    });
-  }
-  
-
-  onSubmit() {
-    if (this.registerForm.valid) {
-
-      console.log(this.registerForm.value);
-    } else {
-
-      console.log("Form is invalid. Please check the fields.");
-    }
-  }
 }
