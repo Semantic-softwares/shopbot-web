@@ -1,4 +1,5 @@
-<form fxLayout="column" fxLayoutAlign="center center" class="pt-20 px-4 h-[100vh] w-full">
+<form [formGroup]="loginForm" (submit)="loginData()" autocomplete="new-password" fxLayout="column"
+    fxLayoutAlign="center center" class="pt-20 px-4 h-[100vh] w-full">
     <div fxLayout="column" fxLayoutGap="1rem" class="min-w-[18rem] max-w-[26rem]">
         <div fxLayout="column" fxLayoutGap="1rem">
             <span class="text-[2rem] font-semibold">Welcome Back!</span>
@@ -6,10 +7,11 @@
         </div>
         <div fxLayout="column" fxLayoutGap="1rem">
             <mat-form-field appearance="outline">
-                <input matInput type="email" placeholder="Enter Email" required>
+                <input matInput type="email" placeholder="Enter Email" formControlName="email" id="email"
+                    autocomplete="new-password" required>
             </mat-form-field>
             <mat-form-field appearance="outline">
-                <input matInput type="password" placeholder="Password" required>
+                <input matInput type="password" placeholder="Password" formControlName="password" id="password" autocomplete="new-password" required>
             </mat-form-field>
         </div>
         <a href="#" routerLink="/sign-up" class="text-base transition-all hover:underline">Create Account </a>
