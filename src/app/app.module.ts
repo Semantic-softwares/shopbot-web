@@ -19,7 +19,9 @@ import { LoginServiceService } from 'src/services/login-service/login-service.se
 import { HttpClientModule } from '@angular/common/http';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { CategoryStoreComponent } from './category-store/category-store.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+
 
 
 @NgModule({
@@ -46,6 +48,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
       CartComponent,
       CheckOutComponent,
       CategoryStoreComponent,
+      ReactiveFormsModule
       LandingPageComponent,
       LoginPageComponent,
       HttpClientModule,

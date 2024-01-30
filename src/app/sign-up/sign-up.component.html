@@ -1,4 +1,5 @@
-<form fxLayout="column" fxLayoutAlign="center center" class="pt-20 px-4 h-[110vh] w-full">
+<form [formGroup]="signupForm" (submit)="SignupData()" fxLayout="column" fxLayoutAlign="center center"
+    class="pt-20 px-4 h-[110vh] w-full">
     <div fxLayout="column" fxLayoutGap="1rem" class="min-w-[18rem] max-w-[28rem]">
         <div fxLayout="column" fxLayoutGap="1rem">
             <span class="text-[1.4rem] font-semibold">Let's get you onboard!</span>
@@ -8,33 +9,40 @@
             <mat-form-field appearance="outline">
                 <div fxLayout="row" class="gap-[1rem]" fxLayoutAlign="center center">
                     <mat-icon matSuffix>perm_identity</mat-icon>
-                <input type="text" matInput placeholder="Full Name" required>
+                    <input type="text" formControlName="name" matInput placeholder="Full Name" required>
                 </div>
             </mat-form-field>
-
             <mat-form-field appearance="outline">
                 <div fxLayout="row" class="gap-[1rem]" fxLayoutAlign="center center">
                     <mat-icon matSuffix>phone</mat-icon>
-                <input type="tel" matInput placeholder="Phone Number" required>
+                    <input type="tel" formControlName="phonenumber" matInput placeholder="Phone Number" required>
                 </div>
             </mat-form-field>
-
+            <mat-form-field appearance="outline">
+                <mat-label>Country</mat-label>
+                <mat-select [(ngModel)]="selectedOption" formControlName="country">
+                    <mat-option *ngFor="let countryData of allCountries"
+                        [value]="countryData">{{countryData.country}}</mat-option>
+                </mat-select>
+            </mat-form-field>
             <mat-form-field appearance="outline">
                 <div fxLayout="row" class="gap-[1rem]" fxLayoutAlign="center center">
                     <mat-icon class="text-[22px]" matSuffix> mail_outline</mat-icon>
-                <input type="email" matInput placeholder="Email" required>
+                    <input type="email" formControlName="email" matInput placeholder="Email" required>
                 </div>
             </mat-form-field>
-
             <mat-form-field appearance="outline">
                 <div fxLayout="row" class="gap-[1rem]" fxLayoutAlign="center center">
                     <mat-icon type="password" matSuffix>key</mat-icon>
-                <input matInput placeholder="Password" required>
+                    <input matInput formControlName="password" placeholder="Password" required>
                 </div>
             </mat-form-field>
         </div>
         <div>
-            Already have an account <a href="#" routerLink="/login-page" class="text-base transition-all hover:underline">Login</a>
+            Already have an account
+            <a href="#" routerLink="/login-page" class="text-base transition-all hover:underline">
+                Login
+            </a>
         </div>
         <button class="h-[4rem] w-full bg-black text-white text-base rounded-lg transition-all hover:bg-zinc-800">
             Continue
